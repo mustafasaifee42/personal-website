@@ -1,0 +1,35 @@
+.topNav{
+  border-bottom: 1px solid #efefef;
+  background-color: var(--bgColor);
+  top:0;
+  left:0;
+  right:0;
+  z-index: 10;
+  position:fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+}
+
+.backToHome{
+  font-size: 30px;
+  margin: 15px 20px 5px 20px;
+  font-family: 'Baloo Tamma 2', sans-serif;
+}
+
+.backToHome:hover{
+  color: var(--blue);
+}
+
+
+.navItem{
+  font-size: 18px;
+  padding: 20px;
+  font-weight: bold;
+  color:#aaa;
+}
+
+.navItem:hover{
+  color:var(--primary);
+}

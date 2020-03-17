@@ -1,0 +1,63 @@
+:root{
+  --magenta: rgb(218, 9, 147);
+  --blue:#200a74;
+  --green:#009f77;
+  --primary:#414141;
+  --bgColor:rgb(250, 251, 252);
+  --seperatorColor:#1D3557;
+}
+
+body {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 18px;
+  color:var(--primary);
+  background-color: #fff;
+}
+
+.sansSerif{
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.italics{
+  font-style: italic;
+}
+
+.container{
+  max-width: 960px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.seperator{
+  height: 2px;
+  background-color: var(--seperatorColor);
+  width: 100%;
+}
+
+.red{
+  color:var(--magenta);
+}
+
+.green{
+  color:var(--green);
+}
+
+.blue{
+  color:var(--blue);
+}
+
+.orange{
+  color:var(--blue);
+}
+
+a {
+  text-decoration: none;
+}
+
+.capitalize{
+  text-transform: uppercase;
+}

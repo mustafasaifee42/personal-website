@@ -1,0 +1,5 @@
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    margin:150px 0 70px 0;
+}

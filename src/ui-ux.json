@@ -1,0 +1,26 @@
+[
+  {
+    "title":"Oma Fingrid",
+    "size":"medium",
+    "img":"./img/UiUx/img2.jpg",
+    "description":"An Online service for Fingrid clients to visualize and monitor their electrical network and usage.",
+    "link":"oma-fingrid",
+    "markDownFile":"./mdFiles/omaFingrid.md",
+    "client":"Fingrid Oy",
+    "year":"2018-2019",
+    "role":"UI / UX Designer, Data Visualizer",
+    "images":["./img/UIUx/mockups/Fingrid/1.png","./img/UIUx/mockups/Fingrid/2.png","./img/UIUx/mockups/Fingrid/3.png","./img/UIUx/mockups/Fingrid/4.png","./img/UIUx/mockups/Fingrid/5.png","./img/UIUx/mockups/Fingrid/6.png"]
+  },
+  {
+    "title":"Fortum Apollo",
+    "size":"medium",
+    "img":"./img/UiUx/img1.jpg",
+    "description":"Apollo is tool to create and visualize stochastic model to optimize the production of hydropower in the medium term.",
+    "link":"fortum-apollo",
+    "markDownFile":"./mdFiles/fortumApollo.md",
+    "client":"Fortum Oy",
+    "year":"2016-2017",
+    "role":"UI / UX Designer, Data Visualizer",
+    "images":["./img/UIUx/mockups/FortumApollo/1.png","./img/UIUx/mockups/FortumApollo/2.png","./img/UIUx/mockups/FortumApollo/3.png","./img/UIUx/mockups/FortumApollo/4.png","./img/UIUx/mockups/FortumApollo/5.png","./img/UIUx/mockups/FortumApollo/6.png"]
+  }
+]

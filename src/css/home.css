@@ -1,0 +1,79 @@
+.sectionTitle{
+  color:#fff;
+  padding:10px;
+}
+
+
+.dataViz > .sectionTitle{
+  background-color: var(--green);
+}
+.UiUx > .sectionTitle{
+  background-color: var(--magenta);
+}
+
+.talks > .sectionTitle{
+  background-color: var(--blue);
+}
+
+.dataViz > .features > .big > .projectContentbig > .projectTitle {
+  color: var(--green);
+}
+.dataViz > .features > .medium > .projectContentmedium > .projectTitle {
+  color: var(--green);
+}
+
+.UiUx > .features > .big > .projectContentbig > .projectTitle {
+  color: var(--magenta);
+}
+.UiUx > .features > .medium > .projectContentmedium > .projectTitle {
+  color: var(--magenta);
+}
+
+.talks > .features > .big > .projectContentbig > .projectTitle {
+  color: var(--blue);
+}
+.talks > .features > .medium > .projectContentmedium > .projectTitle {
+  color: var(--blue);
+}
+
+.dataViz > .features > .big > .projectContentbig > .projectTitle, .dataViz > .features > .big > .projectContentbig > .viewSite {
+  color: var(--green);
+}
+.dataViz > .features > .medium > .projectContentmedium > .projectTitle, .dataViz > .features > .medium > .projectContentmedium > .viewSite {
+  color: var(--green);
+}
+
+.UiUx > .features > .big > .projectContentbig > .projectTitle, .UiUx > .features > .big > .projectContentbig > .viewSite {
+  color: var(--magenta);
+}
+.UiUx > .features > .medium > .projectContentmedium > .projectTitle, .UiUx > .features > .medium > .projectContentmedium > .viewSite {
+  color: var(--magenta);
+}
+
+.talks > .features > .big > .projectContentbig > .projectTitle, .talks > .features > .big > .projectContentbig > .viewSite {
+  color: var(--blue);
+}
+.talks > .features > .medium > .projectContentmedium > .projectTitle, .talks > .features > .medium > .projectContentmedium > .viewSite {
+  color: var(--blue);
+}
+
+
+.projectDetailsMd > p{
+  margin-bottom: 0;
+}
+
+.imgLink{
+  transform: scale(1);
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+.imgLink:hover{
+  opacity: 1;
+  transform: scale(1.03);
+  transition: 0.5s;
+}
+
+.viewSite:hover{
+  text-decoration: underline;
+}

@@ -1,0 +1,24 @@
+.footer{
+  border-top: 1px solid #efefef;
+  background-color: var(--bgColor);
+  padding: 30px 20px 20px 20px;
+  text-align: center;
+  bottom: 0;
+}
+
+.footerTitle{
+  font-size: 36px;
+  margin-bottom: -20px;
+  font-family: 'Baloo Tamma 2', sans-serif;
+  color:var(--primary);
+}
+
+.attributes{
+    font-size: 14px;
+    color:#aaa;
+    margin-top:30px;
+}
+
+a{
+    color: inherit;
+}

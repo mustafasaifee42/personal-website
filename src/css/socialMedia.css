@@ -1,0 +1,19 @@
+.socialMediaContainer{
+  display: flex;
+  margin:20px 0;
+}
+
+.icons{
+  margin:0 5px; 
+  width:36px;
+  height:36px;
+}
+
+.icons:hover{
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+
+.center{
+  justify-content: center;
+}

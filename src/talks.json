@@ -1,0 +1,25 @@
+[
+  {
+    "title":"VR-Viz",
+    "size":"medium",
+    "link":"https://vimeo.com/366829020",
+    "event":"Visualizing Knowledge Conference @ Aalto University",
+    "img":"./img/talks/img1.jpg",
+    "date":"May 2019"
+  },
+  {
+    "title":"Visualization system for data visualization in VR",
+    "size":"medium",
+    "link":"https://youtu.be/g95rtexVr0Y",
+    "event":"Tech-Weeklies @ Futurice",
+    "img":"./img/talks/img2.jpg",
+    "date":"Nov. 2018"
+  },
+  {
+    "title":"Interactive prototyping workshop",
+    "size":"big",
+    "event":"2 week workshow @ School of Planning and Architecture, Bhopal, India",
+    "img":"./img/talks/img3.jpg",
+    "date":"Mar. 2018"
+  }
+]

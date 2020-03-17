@@ -1,0 +1,37 @@
+[
+  {
+    "title":"Every Breath we Take!",
+    "size":"big",
+    "img":"./img/img1.svg",
+    "description":"A project exploring air pollution in India and its effect on the health and economy.",
+    "link":"https://air-quality-in-india.netlify.com/"
+  },
+  {
+    "title":"Falsehood flies, and the Truth comes limping after it",
+    "size":"medium",
+    "img":"./img/img2.svg",
+    "description":"A project exploring influence campaign & disinformation on Twitter.",
+    "link":"http://influence-campaign-on-twitter-visualized.netlify.com/"
+  },
+  {
+    "title":"Vr-Viz",
+    "size":"medium",
+    "img":"./img/img5.jpg",
+    "description":"VR-Viz provide a high-level react components to generate 3D visualization in webVR. __Vr-Viz was shorlisted for Information is Beautiful Award 2019 and is featured in O'Reily's Creating Augmented and Virtual Realities.__",
+    "link":"https://github.com/mustafasaifee42/VR-Viz"
+  },
+  {
+    "title":"Indian General Election Results",
+    "size":"medium",
+    "img":"./img/img3.svg",
+    "description":"A visual exploration of World's biggest electoral exercise i.e. Indian general election.",
+    "link":"https://loksabharesults.netlify.com/"
+  },
+  {
+    "title":"SafeGlobe Arms Report",
+    "size":"medium",
+    "img":"./img/img4.svg",
+    "description":"Interactive data visualisations, visualizing Finnish arms export data. This project was done in collaboration with SaferGlobe as a part of my work at Futurice.",
+    "link":"https://saferglobe.fi/armsreport/"
+  }
+]
