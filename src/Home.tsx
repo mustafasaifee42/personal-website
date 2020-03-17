@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
+import { Link } from "react-router-dom";
 import SocialMedia from './SocialMedia';
 import './css/introSection.css';
 import './css/section.css';
@@ -16,9 +17,9 @@ const Home: React.FunctionComponent<{}> = () => {
     return (
       <div className={`${d.size} ${clss}`} key={i}>
         <div className={`${d.size}-img`}>
-          <a href={`/${d.link}`} rel="noopener noreferrer">
+          <Link to={`/${d.link}`} >
             <img src={d.img} className="imgLink" alt="title" width="100%" />
-          </a>
+          </Link>
         </div>
         <div className={`projectContent${d.size}`}>
           <span className="projectTitle">
@@ -29,9 +30,9 @@ const Home: React.FunctionComponent<{}> = () => {
             <ReactMarkdown className="projectDetailsMd" source={d.description}/>
           </span>
           <br />
-          <a href={`/${d.link}`} rel="noopener noreferrer" className="viewSite"> 
+          <Link to={`/${d.link}`} >
             Read More <span role="img" aria-label="read-more">📖</span> 
-          </a>
+          </Link>
         </div>
       </div>
     )
