@@ -93,6 +93,16 @@
   }
 }
 
+@media only screen and (max-width: 730px){
+
+  .odd{
+    margin: 0 10px;
+  }
+  .even{
+    margin: 0 10px;
+  }
+}
+
 .projectContentmedium{
   margin-bottom: 20px;
 }
