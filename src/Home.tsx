@@ -30,8 +30,8 @@ const Home: React.FunctionComponent<{}> = () => {
             <ReactMarkdown className="projectDetailsMd" source={d.description}/>
           </span>
           <br />
-          <Link to={`/${d.link}`} >
-            Read More <span role="img" aria-label="read-more">📖</span> 
+          <Link to={`/${d.link}`} className="viewSite" >
+            Read More
           </Link>
         </div>
       </div>
@@ -58,7 +58,7 @@ const Home: React.FunctionComponent<{}> = () => {
           </span>
           <br />
           <a href={d.link} rel="noopener noreferrer" className="viewSite" target="_blank">
-            View Site <span role="img" aria-label="visit-site">💻</span>
+            View Site
           </a>
         </div>
       </div>
@@ -69,7 +69,7 @@ const Home: React.FunctionComponent<{}> = () => {
     let clss = odd ? 'odd' : 'even'
     odd = d.size === 'medium' ? !odd : odd
     let img = d.link ? <a href={d.link} rel="noopener noreferrer" target="_blank"> <img src={d.img} alt="title"  className="imgLink" width="100%" /> </a> : <img src={d.img} alt="title" width="100%" />
-    let link = d.link ? <a href={d.link} rel="noopener noreferrer" target="_blank" className="viewSite">Watch Video <span role="img" aria-label="visit-site">📹</span> </a> : null
+    let link = d.link ? <a href={d.link} rel="noopener noreferrer" target="_blank" className="viewSite">Watch Video</a> : null
     return (
       <div className={`${d.size} ${clss}`} key={i}>
       <div className={`${d.size}-img`}>
@@ -96,16 +96,16 @@ const Home: React.FunctionComponent<{}> = () => {
       <div className="header">
         <div className="headerTitle blue">mustafa saifee</div>
         <div className="headerBody">
-          Hello! <span role="img" aria-label="hello">👋</span> 
+          Hello!
           <br />
           <br />
-          I am a part designer <span role="img" aria-label="designer">🎨</span> and part developer <span role="img" aria-label="developer">💻</span> who enjoys telling data stories.
+          I am a part designer and part developer who enjoys telling data stories.
           <br />
           <br />
-          Currently I am based in Helsinki, Finland <span role="img" aria-label="finland">🇫🇮</span> and working in Futurice.
+          Currently I am based in Helsinki, Finland and working in Futurice.
           <br />
           <br />
-          Feel free to get in touch <span role="img" aria-label="contact">☎</span> , if you want to work together or just to say hi <span role="img" aria-label="hello">💌</span>!
+          Feel free to get in touch, if you want to work together or just to say hi!
           <SocialMedia align="left"/>
         </div>
       </div>

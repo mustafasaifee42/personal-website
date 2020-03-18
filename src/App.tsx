@@ -35,7 +35,7 @@ function App() {
       <div className={`topNav`}>
         <Link to={`/`} >
           <div className="backToHome">
-            Mustafa Saifee
+            mustafa saifee
           </div> 
         </Link>
         <Link to={`/about`} >
