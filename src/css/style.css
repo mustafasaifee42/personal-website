@@ -1,8 +1,9 @@
 :root{
-  --magenta: rgb(218, 9, 147);
-  --blue:#200a74;
-  --green:#009f77;
-  --primary:#414141;
+  --magenta: #EA4335;
+  --blue:#4285F4;
+  --yellow:#FBBC04;
+  --green:#34A853;
+  --primary:#202124;
   --bgColor:rgb(250, 251, 252);
   --seperatorColor:#1D3557;
 }
@@ -28,7 +29,8 @@ body {
 
 .container{
   max-width: 960px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 20px;
 }
 

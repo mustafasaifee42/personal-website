@@ -12,7 +12,7 @@
 }
 
 .talks > .sectionTitle{
-  background-color: var(--blue);
+  background-color: var(--yellow);
 }
 
 .dataViz > .features > .big > .projectContentbig > .projectTitle {
@@ -30,10 +30,10 @@
 }
 
 .talks > .features > .big > .projectContentbig > .projectTitle {
-  color: var(--blue);
+  color: var(--yellow);
 }
 .talks > .features > .medium > .projectContentmedium > .projectTitle {
-  color: var(--blue);
+  color: var(--yellow);
 }
 
 .dataViz > .features > .big > .projectContentbig > .projectTitle, .dataViz > .features > .big > .projectContentbig > .viewSite {
@@ -51,10 +51,10 @@
 }
 
 .talks > .features > .big > .projectContentbig > .projectTitle, .talks > .features > .big > .projectContentbig > .viewSite {
-  color: var(--blue);
+  color: var(--yellow);
 }
 .talks > .features > .medium > .projectContentmedium > .projectTitle, .talks > .features > .medium > .projectContentmedium > .viewSite {
-  color: var(--blue);
+  color: var(--yellow);
 }
 
 

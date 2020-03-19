@@ -31,7 +31,7 @@ const Home: React.FunctionComponent<{}> = () => {
           </span>
           <br />
           <Link to={`/${d.link}`} className="viewSite" >
-            Read More
+            Read More →
           </Link>
         </div>
       </div>
@@ -58,7 +58,7 @@ const Home: React.FunctionComponent<{}> = () => {
           </span>
           <br />
           <a href={d.link} rel="noopener noreferrer" className="viewSite" target="_blank">
-            View Site
+            View Site →
           </a>
         </div>
       </div>
@@ -69,7 +69,7 @@ const Home: React.FunctionComponent<{}> = () => {
     let clss = odd ? 'odd' : 'even'
     odd = d.size === 'medium' ? !odd : odd
     let img = d.link ? <a href={d.link} rel="noopener noreferrer" target="_blank"> <img src={d.img} alt="title"  className="imgLink" width="100%" /> </a> : <img src={d.img} alt="title" width="100%" />
-    let link = d.link ? <a href={d.link} rel="noopener noreferrer" target="_blank" className="viewSite">Watch Video</a> : null
+    let link = d.link ? <a href={d.link} rel="noopener noreferrer" target="_blank" className="viewSite">Watch Video →</a> : null
     return (
       <div className={`${d.size} ${clss}`} key={i}>
       <div className={`${d.size}-img`}>

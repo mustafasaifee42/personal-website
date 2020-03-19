@@ -1,5 +1,9 @@
 .about{
     display: flex;
     flex-wrap: wrap;
-    margin:150px 0 70px 0;
+    margin:20px 0 70px 0;
+}
+
+.aboutPage{
+    margin-top:130px;
 }

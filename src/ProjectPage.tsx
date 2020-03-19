@@ -1,4 +1,7 @@
 import React , { useState } from 'react';
+import {
+  Link
+} from "react-router-dom";
 import ReactMarkdown from 'react-markdown';
 import './css/projectPage.css';
 import './css/mdFile.css';
@@ -31,8 +34,14 @@ const ProjectPage: React.FunctionComponent<{
   else
     return (
       <div>
-        <div className="container">
-          <div className="bold blue projectPageTitle">{props.title}</div>
+        <div className="container pojectPage">
+          <Link to={`/`} >
+            <div className="backButton sansSerif">
+              ← Back to home
+            </div>
+          </Link>
+
+          <div className="bold projectPageTitle">{props.title}</div>
           <div className="projectText">
             <div className="sideBar">
               <div className="capitalize textTitle bold sansSerif">

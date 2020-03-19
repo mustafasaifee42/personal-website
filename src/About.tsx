@@ -1,10 +1,19 @@
 import React from 'react';
 import SocialMedia from './SocialMedia';
 import './css/about.css';
+import {
+  Link
+} from "react-router-dom";
 
 const Home: React.FunctionComponent<{}> = () => {
   return (
-    <div className="container">
+    <div className="container aboutPage">
+      <Link to={`/`} >
+        <div className="backButton sansSerif">
+          ← Back to home
+        </div>
+      </Link>
+
       <div className="header about">
         <div>
           <div className="headerTitle bold blue">Hello! Nice to see you here!</div>

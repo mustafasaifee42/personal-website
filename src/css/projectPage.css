@@ -1,8 +1,23 @@
 .projectPageTitle{
-  margin: 120px 0 40px 0;
+  margin: 20px 0 20px 0;
   font-family: 'Baloo Tamma 2', sans-serif;
   font-size: 48px;
+  color:var(--magenta)
 
+}
+
+.pojectPage{
+  margin-top:130px;
+}
+
+.backButton{
+  color:var(--primary);
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.backButton:hover{
+  color:var(--blue)
 }
 
 .projectText{
