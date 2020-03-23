@@ -19,6 +19,10 @@
     margin-top:30px;
 }
 
-a{
-    color: inherit;
+.footerNote{
+  border-top:1px solid #aaa;
+  padding-top:20px;
+  font-size: 14px;
+  color:#aaa;
+  text-align:left ;
 }

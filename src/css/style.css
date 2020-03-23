@@ -53,11 +53,21 @@ body {
 }
 
 .orange{
-  color:var(--blue);
+  color:var(--yellow);
 }
 
 a {
+  color: inherit;
   text-decoration: none;
+}
+
+a.link{
+  color: var(--blue);
+  font-style: italic;
+}
+
+a.link:hover{
+  font-weight: bold;
 }
 
 .capitalize{

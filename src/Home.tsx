@@ -102,7 +102,7 @@ const Home: React.FunctionComponent<{}> = () => {
           I am a part designer and part developer who enjoys telling data stories.
           <br />
           <br />
-          Currently I am based in Helsinki, Finland and working in Futurice.
+          Currently I am based in Helsinki, Finland and working working with <a href="https://www.futurice.com/" rel="noopener noreferrer" target='_blank' className='link'>Futurice</a>.
           <br />
           <br />
           Feel free to get in touch, if you want to work together or just to say hi!
