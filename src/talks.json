@@ -4,7 +4,7 @@
     "size":"medium",
     "link":"https://vimeo.com/366829020",
     "event":"Visualizing Knowledge Conference @ Aalto University",
-    "img":"./img/talks/img1.jpg",
+    "img":"./img/talks/img1",
     "date":"May 2019"
   },
   {
@@ -12,14 +12,14 @@
     "size":"medium",
     "link":"https://youtu.be/g95rtexVr0Y",
     "event":"Tech-Weeklies @ Futurice",
-    "img":"./img/talks/img2.jpg",
+    "img":"./img/talks/img2",
     "date":"Nov. 2018"
   },
   {
     "title":"Interactive prototyping workshop",
     "size":"big",
     "event":"2 week workshow @ School of Planning and Architecture, Bhopal, India",
-    "img":"./img/talks/img3.jpg",
+    "img":"./img/talks/img3",
     "date":"Mar. 2018"
   }
 ]

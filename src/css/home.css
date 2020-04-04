@@ -39,8 +39,17 @@
 .dataViz > .features > .big > .projectContentbig > .projectTitle, .dataViz > .features > .big > .projectContentbig > .viewSite {
   color: var(--green);
 }
-.dataViz > .features > .medium > .projectContentmedium > .projectTitle, .dataViz > .features > .medium > .projectContentmedium > .viewSite {
+.dataViz > .features > .medium > .projectContentmedium > .projectTitle, .dataViz > .features > .medium > .projectContentmedium > .viewSite{
   color: var(--green);
+}
+
+.dataViz > .features > .medium > .projectContentmedium > .projectDescription > .projectDetailsMd > p > a {
+  font-weight: bold;
+  font-style: italic;
+  color: var(--green);
+}
+.dataViz > .features > .medium > .projectContentmedium > .projectDescription > .projectDetailsMd > p > a:hover {
+  text-decoration: underline;
 }
 
 .UiUx > .features > .big > .projectContentbig > .projectTitle, .UiUx > .features > .big > .projectContentbig > .viewSite {
@@ -48,6 +57,14 @@
 }
 .UiUx > .features > .medium > .projectContentmedium > .projectTitle, .UiUx > .features > .medium > .projectContentmedium > .viewSite {
   color: var(--magenta);
+}
+.UiUx > .features > .medium > .projectContentmedium > .projectDescription > .projectDetailsMd > p > a {
+  font-weight: bold;
+  font-style: italic;
+  color: var(--magenta);
+}
+.UiUx > .features > .medium > .projectContentmedium > .projectDescription > .projectDetailsMd > p > a:hover {
+  text-decoration: underline;
 }
 
 .talks > .features > .big > .projectContentbig > .projectTitle, .talks > .features > .big > .projectContentbig > .viewSite {
@@ -57,6 +74,14 @@
   color: var(--yellow);
 }
 
+.talks > .features > .medium > .projectContentmedium > .projectDescription > .projectDetailsMd > p > a {
+  font-weight: bold;
+  font-style: italic;
+  color: var(--yellow);
+}
+.talks > .features > .medium > .projectContentmedium > .projectDescription > .projectDetailsMd > p > a:hover {
+  text-decoration: underline;
+}
 
 .projectDetailsMd > p{
   margin-bottom: 0;

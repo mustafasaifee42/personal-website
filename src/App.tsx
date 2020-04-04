@@ -38,7 +38,7 @@ function App() {
   })
   return (
     <Router>
-      <div className={`topNav`}>
+      <header className={`topNav`}>
         <Link to={`/`} >
           <div className="backToHome">
             mustafa saifee
@@ -49,7 +49,7 @@ function App() {
             About
           </div>
         </Link>
-      </div>
+      </header>
       <Route path={`/`} exact render={
         () => {
         return( <Home /> )
@@ -61,7 +61,7 @@ function App() {
         }
       }/>
       {UiUxRoute}
-      <div className={`footer`}>
+      <footer className={`footer`}>
         <div className="footerTitle">
           Let's have a chat!
         </div> 
@@ -73,7 +73,7 @@ function App() {
         <br />
         <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" className="italics" title="Freepik">Freepik</a> and <a href="https://www.flaticon.com/authors/pixel-perfect" className="italics"  title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" className="italics"  title="Flaticon">www.flaticon.com</a></div>        
         </div>      
-      </div>
+      </footer>
     </Router>
   );
 }

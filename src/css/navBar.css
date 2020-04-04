@@ -20,12 +20,13 @@
 }
 
 .navItem{
-  font-size: 18px;
+  font-size: 16px;
   padding: 20px;
-  font-weight: bold;
-  color:#aaa;
+  font-weight: normal;
+  color:var(--primary);
 }
 
 .navItem:hover{
   color:var(--primary);
+  font-weight: bold;
 }
