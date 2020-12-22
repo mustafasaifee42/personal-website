@@ -1,5 +1,12 @@
 [
   {
+    "title":"Air Quality Data Portal",
+    "size":"big",
+    "img":"./img/dataViz/img7",
+    "description":"Compare real-time worldwide air quality levels with interactive air quality (PM 2.5 concentration) and pollution map.",
+    "link":"https://airq.mustafasaifee.com"
+  },
+  {
     "title":"COVID-19 Dashboard",
     "size":"big",
     "img":"./img/dataViz/img6",
