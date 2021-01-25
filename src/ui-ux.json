@@ -1,5 +1,17 @@
 [
   {
+    "title":"VR Ohjus",
+    "size":"big",
+    "img":"./img/UiUx/img3",
+    "description":"Ohjus is situational awareness system for commuter train disruption management. It visualizes real-time data for improved and more reliable rail service.",
+    "link":"vr-ohjus",
+    "markDownFile":"./mdFiles/vrOhjus.md",
+    "client":"VR Group",
+    "year":"2020",
+    "role":"UI / UX Designer, Data Visualizer, Frontend Developer",
+    "images":["./img/UIUx/mockups/VROhjus/1.png","./img/UIUx/mockups/VROhjus/2.png","./img/UIUx/mockups/VROhjus/3.png"]
+  },
+  {
     "title":"Oma Fingrid",
     "size":"medium",
     "img":"./img/UiUx/img2",

@@ -87,6 +87,11 @@
   margin-bottom: 0;
 }
 
+.md > p > a {
+  color: var(--magenta);
+  font-style: italic;
+}
+
 .imgLink{
   transform: scale(1);
   opacity: 0.8;
