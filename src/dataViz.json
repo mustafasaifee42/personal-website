@@ -14,6 +14,13 @@
     "link":"https://covid19.mustafasaifee.com"
   },
   {
+    "title":"Vr-Viz",
+    "size":"big",
+    "img":"./img/dataViz/img5",
+    "description":"VR-Viz provide a high-level react components to generate 3D visualization in webVR. Vr-Viz was shorlisted for [Information is Beautiful Award 2019](https://www.informationisbeautifulawards.com/showcase/3884-vr-viz-visualization-system-for-virtual-reality) and is featured in [O'Reily's Creating Augmented and Virtual Realities](http://shop.oreilly.com/product/0636920206767.do).",
+    "link":"https://github.com/mustafasaifee42/VR-Viz"
+  },
+  {
     "title":"Every Breath we Take!",
     "size":"medium",
     "img":"./img/dataViz/img1",
@@ -21,15 +28,8 @@
     "link":"https://air-quality-in-india.mustafasaifee.com"
   },
   {
-    "title":"Vr-Viz",
-    "size":"medium",
-    "img":"./img/dataViz/img5",
-    "description":"VR-Viz provide a high-level react components to generate 3D visualization in webVR. Vr-Viz was shorlisted for [Information is Beautiful Award 2019](https://www.informationisbeautifulawards.com/showcase/3884-vr-viz-visualization-system-for-virtual-reality) and is featured in [O'Reily's Creating Augmented and Virtual Realities](http://shop.oreilly.com/product/0636920206767.do).",
-    "link":"https://github.com/mustafasaifee42/VR-Viz"
-  },
-  {
     "title":"Falsehood flies, and the Truth comes limping after it",
-    "size":"big",
+    "size":"medium",
     "img":"./img/dataViz/img2",
     "description":"A project exploring influence campaign & disinformation on Twitter.",
     "link":"https://influence-campaign-on-twitter-visualized.mustafasaifee.com/"
