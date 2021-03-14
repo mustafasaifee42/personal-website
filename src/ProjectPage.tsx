@@ -1,76 +1,55 @@
-import React , { useState } from 'react';
-import {
-  Link
-} from "react-router-dom";
-import ReactMarkdown from 'react-markdown';
-import './css/projectPage.css';
-import './css/mdFile.css';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import ReactMarkdown from "react-markdown";
+import "./css/projectPage.css";
+import "./css/mdFile.css";
 
 const ProjectPage: React.FunctionComponent<{
-  markDownFileLink: string,
-  title: string,
-  role: string,
-  year: string,
-  client: string,
-  images: string[],
+  markDownFileLink: string;
+  title: string;
+  role: string;
+  year: string;
+  client: string;
+  images: string[];
 }> = (props) => {
-  
-  const [ mdFile , setmdFile ] = useState('')
+  const [mdFile, setmdFile] = useState("");
   fetch(props.markDownFileLink)
-    .then(res => res.text())
-    .then(text => {
-      setmdFile(text)
+    .then((res) => res.text())
+    .then((text) => {
+      setmdFile(text);
     });
-  
 
-  let img = props.images.map((d:string, i:number) => {
+  let img = props.images.map((d: string, i: number) => {
     return (
       <img src={d} alt="title" className="projectImage" width="100%" key={i} />
-    )
-  })
-  
-  if (mdFile === '')
-    return (<div />)
+    );
+  });
+
+  if (mdFile === "") return <div />;
   else
     return (
       <div>
         <div className="container pojectPage">
-          <Link to={`/`} >
-            <div className="backButton sansSerif">
-              ← Back to home
-            </div>
+          <Link to={`/`}>
+            <div className="backButton sansSerif">← Back to home</div>
           </Link>
 
           <div className="bold projectPageTitle">{props.title}</div>
           <div className="projectText">
             <div className="sideBar">
-              <div className="capitalize textTitle bold sansSerif">
-                Client
-              </div>
-              <div>
-                {props.client}
-              </div>
-              <br/>
-              <div className="capitalize textTitle bold sansSerif">
-                Year
-              </div>
-              <div>
-                {props.year}
-              </div>
+              <div className="capitalize textTitle bold sansSerif">Client</div>
+              <div>{props.client}</div>
               <br />
-              <div className="capitalize textTitle bold sansSerif">
-                Role
-              </div>
-              <div>
-                {props.role}
-              </div>
+              <div className="capitalize textTitle bold sansSerif">Year</div>
+              <div>{props.year}</div>
+              <br />
+              <div className="capitalize textTitle bold sansSerif">Role</div>
+              <div>{props.role}</div>
             </div>
-            <ReactMarkdown className="md" source={mdFile}/>
+            <ReactMarkdown className="md" source={mdFile} />
           </div>
         </div>
-        <div className="projectImgContainer">
-          {img}
-        </div>
+        <div className="projectImgContainer">{img}</div>
       </div>
     );
 };

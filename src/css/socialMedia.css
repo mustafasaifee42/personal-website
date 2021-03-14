@@ -1,6 +1,11 @@
 .socialMediaContainer{
   display: flex;
-  margin:20px 0;
+  margin:30px 0;
+}
+
+.socialMediaContainerForAbout{
+  display: flex;
+  margin:30px 0 70px 0;
 }
 
 .icons{
