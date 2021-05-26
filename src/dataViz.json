@@ -1,51 +1,58 @@
 [
   {
-    "title":"Vr-Viz",
-    "size":"big",
-    "img":"./img/dataViz/img5",
-    "description":"VR-Viz provide a high-level react components to generate 3D visualization in webVR. The open source project can be found on [Github](https://github.com/mustafasaifee42/VR-Viz). Vr-Viz was shorlisted for [Information is Beautiful Award 2019](https://www.informationisbeautifulawards.com/showcase/3884-vr-viz-visualization-system-for-virtual-reality) and is featured in [O'Reily's Creating Augmented and Virtual Realities](http://shop.oreilly.com/product/0636920206767.do).",
-    "link":"https://vr-viz.mustafasaifee.com/"
+    "title": "India COVID-19 Vaccine Tracker",
+    "size": "big",
+    "img": "./img/dataViz/img8",
+    "description": "Tool to track vaccination campaign against COVID-19 in India.",
+    "link": "http://india-covid-vaccine-tracker.mustafasaifee.com/"
   },
   {
-    "title":"Air Quality Data Portal",
-    "size":"big",
-    "img":"./img/dataViz/img7",
-    "description":"Compare real-time worldwide air quality levels with interactive air quality (PM 2.5 concentration) and pollution map.",
-    "link":"https://airq.mustafasaifee.com"
+    "title": "Air Quality Data Portal",
+    "size": "medium",
+    "img": "./img/dataViz/img7",
+    "description": "Compare real-time worldwide air quality levels with interactive air quality (PM 2.5 concentration) and pollution map.",
+    "link": "https://airq.mustafasaifee.com"
   },
   {
-    "title":"COVID-19 Dashboard",
-    "size":"big",
-    "img":"./img/dataViz/img6",
-    "description":"Tool to track and visualize the spread of COVID-19 coronavirus.",
-    "link":"https://covid19.mustafasaifee.com"
+    "title": "COVID-19 Dashboard",
+    "size": "medium",
+    "img": "./img/dataViz/img6",
+    "description": "Tool to track and visualize the spread of COVID-19 coronavirus.",
+    "link": "https://covid19.mustafasaifee.com"
   },
   {
-    "title":"Every Breath we Take!",
-    "size":"medium",
-    "img":"./img/dataViz/img1",
-    "description":"A project exploring air pollution in India and its effect on the health and economy.",
-    "link":"https://air-quality-in-india.mustafasaifee.com"
+    "title": "Vr-Viz",
+    "size": "big",
+    "img": "./img/dataViz/img5",
+    "description": "VR-Viz provide a high-level react components to generate 3D visualization in webVR. The open source project can be found on [Github](https://github.com/mustafasaifee42/VR-Viz). Vr-Viz was shorlisted for [Information is Beautiful Award 2019](https://www.informationisbeautifulawards.com/showcase/3884-vr-viz-visualization-system-for-virtual-reality) and is featured in [O'Reily's Creating Augmented and Virtual Realities](http://shop.oreilly.com/product/0636920206767.do).",
+    "link": "https://vr-viz.mustafasaifee.com/"
   },
   {
-    "title":"Falsehood flies, and the Truth comes limping after it",
-    "size":"medium",
-    "img":"./img/dataViz/img2",
-    "description":"A project exploring influence campaign & disinformation on Twitter.",
-    "link":"https://influence-campaign-on-twitter-visualized.mustafasaifee.com/"
+    "title": "Every Breath we Take!",
+    "size": "medium",
+    "img": "./img/dataViz/img1",
+    "description": "A project exploring air pollution in India and its effect on the health and economy.",
+    "link": "https://air-quality-in-india.mustafasaifee.com"
   },
   {
-    "title":"Indian General Election Results",
-    "size":"medium",
-    "img":"./img/dataViz/img3",
-    "description":"A visual exploration of World's biggest electoral exercise i.e. Indian general election.",
-    "link":"https://loksabharesults.mustafasaifee.com"
+    "title": "Falsehood flies, and the Truth comes limping after it",
+    "size": "medium",
+    "img": "./img/dataViz/img2",
+    "description": "A project exploring influence campaign & disinformation on Twitter.",
+    "link": "https://influence-campaign-on-twitter-visualized.mustafasaifee.com/"
   },
   {
-    "title":"SafeGlobe Arms Report",
-    "size":"medium",
-    "img":"./img/dataViz/img4",
-    "description":"Interactive data visualisations, visualizing Finnish arms export data. This project was done in collaboration with SaferGlobe as a part of my work at Futurice.",
-    "link":"https://saferglobe.fi/armsreport/"
+    "title": "Indian General Election Results",
+    "size": "medium",
+    "img": "./img/dataViz/img3",
+    "description": "A visual exploration of World's biggest electoral exercise i.e. Indian general election.",
+    "link": "https://loksabharesults.mustafasaifee.com"
+  },
+  {
+    "title": "SafeGlobe Arms Report",
+    "size": "medium",
+    "img": "./img/dataViz/img4",
+    "description": "Interactive data visualisations, visualizing Finnish arms export data. This project was done in collaboration with SaferGlobe as a part of my work at Futurice.",
+    "link": "https://saferglobe.fi/armsreport/"
   }
 ]
