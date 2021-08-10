@@ -6,6 +6,7 @@ import "./css/introSection.css";
 import "./css/section.css";
 import "./css/home.css";
 import DataVizProjectList from "./dataViz.json";
+import ToolsProjectList from "./dataVizTools.json";
 import UiUxList from "./ui-ux.json";
 import TalksList from "./talks.json";
 
@@ -59,6 +60,58 @@ const Home: React.FunctionComponent<{}> = () => {
   );
   odd = true;
   let projects = DataVizProjectList.map(
+    (
+      d: {
+        title: string;
+        img: string;
+        size: string;
+        description: string;
+        link: string;
+      },
+      i: number
+    ) => {
+      let clss = odd ? "odd" : "even";
+      odd = d.size === "medium" ? !odd : odd;
+      return (
+        <div className={`${d.size} ${clss}`} key={i}>
+          <div className={`${d.size}-img`}>
+            <a href={d.link} rel="noopener noreferrer" target="_blank">
+              <picture>
+                <source type="image/webp" srcSet={`${d.img}.webp`} />
+                <source type="image/jpg" srcSet={`${d.img}.jpg`} />
+                <img
+                  src={`${d.img}.jpg`}
+                  className="imgLink"
+                  alt="title"
+                  width="100%"
+                />
+              </picture>
+            </a>
+          </div>
+          <div className={`projectContent${d.size}`}>
+            <h3 className="projectTitle">{d.title}</h3>
+            <span className="projectDescription">
+              <ReactMarkdown
+                className="projectDetailsMd"
+                source={d.description}
+              />
+            </span>
+            <br />
+            <a
+              href={d.link}
+              rel="noopener noreferrer"
+              className="viewSite"
+              target="_blank"
+            >
+              View Site →
+            </a>
+          </div>
+        </div>
+      );
+    }
+  );
+  odd = true;
+  let tools = ToolsProjectList.map(
     (
       d: {
         title: string;
@@ -208,8 +261,13 @@ const Home: React.FunctionComponent<{}> = () => {
       </div>
       <div className="seperator" />
       <div className="section dataViz">
-        <h2 className="sectionTitle sansSerif bold">Data Visualization</h2>
+        <h2 className="sectionTitle sansSerif bold">Data Visualization Project</h2>
         <div className="features">{projects}</div>
+      </div>
+      <div className="seperator" />
+      <div className="section dataViz">
+        <h2 className="sectionTitle sansSerif bold">Data Visualization Tools</h2>
+        <div className="features">{tools}</div>
       </div>
       <div className="seperator" />
       <div className="section UiUx">

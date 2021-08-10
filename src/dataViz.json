@@ -28,13 +28,6 @@
     "link": "https://covid19.mustafasaifee.com"
   },
   {
-    "title": "Vr-Viz",
-    "size": "big",
-    "img": "./img/dataViz/img5",
-    "description": "VR-Viz provide a high-level react components to generate 3D visualization in webVR. The open source project can be found on [Github](https://github.com/mustafasaifee42/VR-Viz). Vr-Viz was shorlisted for [Information is Beautiful Award 2019](https://www.informationisbeautifulawards.com/showcase/3884-vr-viz-visualization-system-for-virtual-reality) and is featured in [O'Reily's Creating Augmented and Virtual Realities](http://shop.oreilly.com/product/0636920206767.do).",
-    "link": "https://vr-viz.mustafasaifee.com/"
-  },
-  {
     "title": "Every Breath we Take!",
     "size": "medium",
     "img": "./img/dataViz/img1",
