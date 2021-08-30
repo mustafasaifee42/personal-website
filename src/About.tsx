@@ -50,7 +50,15 @@ const Home: React.FunctionComponent<{}> = () => {
             designing and developing data visualization.
             <br />
             <br />
-            Currently I am working as designer with{" "}
+            Currently I am working at <a
+              href="https://aiven.io/"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="link"
+            >
+              Aiven
+            </a> as Sr. UX Designer designing data intensive applications.
+            Before that, I was working as designer with{" "}
             <a
               href="https://www.futurice.com/"
               rel="noopener noreferrer"

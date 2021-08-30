@@ -242,14 +242,14 @@ const Home: React.FunctionComponent<{}> = () => {
           telling data stories.
           <br />
           <br />
-          Currently I am working working with{" "}
+          Currently I am designing data-intensive applications @{" "}
           <a
-            href="https://www.futurice.com/"
+            href="https://aiven.io/"
             rel="noopener noreferrer"
             target="_blank"
             className="link"
           >
-            Futurice
+            Aiven
           </a>
           .
           <br />
