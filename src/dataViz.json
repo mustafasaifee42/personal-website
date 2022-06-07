@@ -1,10 +1,31 @@
 [
   {
-    "title": "Gendered Toponyms",
+    "title": "UNDP Electricity Access Dashboard",
     "size": "big",
+    "img": "./img/dataViz/img13",
+    "description": "(Coming Soon)",
+    "link": ""
+  },
+  {
+    "title": "UNDP Access All Data Tool",
+    "size": "medium",
+    "img": "./img/dataViz/img12",
+    "description": "Tool developed for UNDP for advanced analysis of correlation between data. Animated statistics that everyone can understand",
+    "link": "https://data.undp.org/explore-all-data/"
+  },
+  {
+    "title": "Gendered Toponyms",
+    "size": "medium",
     "img": "./img/dataViz/img9",
     "description": "Mapping gender imbalance in city street names.",
     "link": "https://gendered-toponyms.mustafasaifee.com/"
+  },
+  {
+    "title": "UNDP COVID Vaccine Equity Dashboard",
+    "size": "big",
+    "img": "./img/dataViz/img11",
+    "description": "Dashboard exploring inequities in the global distribution of COVID-19 vaccines",
+    "link": "https://data.undp.org/vaccine-equity/explore-data/"
   },
   {
     "title": "Air Quality Data Portal",
