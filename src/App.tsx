@@ -58,9 +58,18 @@ function App() {
         <Link to={`/`}>
           <div className="backToHome">mustafa saifee</div>
         </Link>
-        <Link to={`/about`}>
-          <div className="navItem sansSerif">About</div>
-        </Link>
+        <div className="rightNav">
+          <a
+            href="./Resume.pdf"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <div className="navItem sansSerif">Resume</div>
+          </a>
+          <Link to={`/about`}>
+            <div className="navItem sansSerif">About</div>
+          </Link>
+        </div>
       </header>
       <Route
         path={`/`}
