@@ -242,18 +242,6 @@ const Home: React.FunctionComponent<{}> = () => {
           telling data stories.
           <br />
           <br />
-          Currently I am designing data-intensive applications @{" "}
-          <a
-            href="https://aiven.io/"
-            rel="noopener noreferrer"
-            target="_blank"
-            className="link"
-          >
-            Aiven
-          </a>
-          .
-          <br />
-          <br />
           Feel free to get in touch, if you want to work together or just to say
           hi!
           <SocialMedia align="left" forAbout={false} />
