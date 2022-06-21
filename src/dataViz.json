@@ -3,8 +3,8 @@
     "title": "UNDP Electricity Access Dashboard",
     "size": "big",
     "img": "./img/dataViz/img13",
-    "description": "(Coming Soon)",
-    "link": ""
+    "description": "Tool for visualizing electricity access at a district level around world based on satellite imaging",
+    "link": "https://electricity-access.netlify.app/"
   },
   {
     "title": "UNDP Access All Data Tool",
