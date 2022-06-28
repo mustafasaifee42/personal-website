@@ -2,16 +2,106 @@ import React from "react";
 import ReactMarkdown from "react-markdown";
 import { Link } from "react-router-dom";
 import SocialMedia from "./SocialMedia";
-import "./css/introSection.css";
-import "./css/section.css";
-import "./css/home.css";
 import DataVizProjectList from "./dataViz.json";
 import ToolsProjectList from "./dataVizTools.json";
 import UiUxList from "./ui-ux.json";
 import TalksList from "./talks.json";
+import styled from "styled-components";
+
+interface SectionTitleElProps {
+  fill: string;
+}
+
+const SectionTitleEl = styled.div<SectionTitleElProps>`
+  background-color: ${props => props.fill};
+  margin: 2rem 0;
+  padding: 1rem;
+  display: inline-flex;
+  color: var(--white);
+`;
+
+const HeaderEl = styled.div`
+  margin: 11rem 0 2rem 0;
+`;
+
+const H2 = styled.h2<SectionTitleElProps>`
+  color: ${props => props.fill};
+  margin: 0;
+`;
+
+const FeatureEl = styled.div`
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+`;
+
+const A  = styled.a<SectionTitleElProps>`
+  color: ${props => props.fill};
+  font-style: normal;
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+const LinkEl = styled.div`
+  a {
+    font-style: normal;
+    color: var(--magenta);
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+`;
+
+interface SizeProps {
+  size: 'big' | 'medium';
+}
+
+const SectionEl = styled.div<SizeProps>`
+  width: ${props => props.size === 'big' ? '100%' : 'calc(50% - 2rem)'};
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: ${props => props.size === 'big' ? '4rem' : '3rem'};
+`;
+
+const ImageEl = styled.div<SizeProps>`
+  width: ${props => props.size === 'big' ? 'calc(70% - 2rem)' : '100%'};
+  margin-right: ${props => props.size === 'big' ? '2rem' : '0'};
+  margin-bottom: ${props => props.size === 'big' ? '0' : '1rem'};
+`;
+
+const ContentEl = styled.div<SizeProps>`
+  width: ${props => props.size === 'big' ? '30%' : '100%'};
+  flex-shrink: 0;
+`;
+
+const ImgLink = styled.img`
+  transform: scale(1);
+  opacity: 0.8;
+  transition: 0.5s;
+  &:hover{
+    opacity: 1;
+    transform: scale(1.03);
+    transition: 0.5s;
+  }
+`;
+
+const SeperatorEl = styled.div`
+  height: 0.2rem;
+  background-color: var(--black-400);
+  width: 100%;
+`;
+
+const H1  = styled.h1`
+  font-family: 'Baloo Tamma 2', sans-serif;
+  font-size: 48px;
+  color: var(--blue);
+  margin: 0;  
+`;
 
 const Home: React.FunctionComponent<{}> = () => {
-  let odd = true;
   let UiUx = UiUxList.map(
     (
       d: {
@@ -23,42 +113,40 @@ const Home: React.FunctionComponent<{}> = () => {
       },
       i: number
     ) => {
-      let clss = odd ? "odd" : "even";
-      odd = d.size === "medium" ? !odd : odd;
       return (
-        <div className={`${d.size} ${clss}`} key={i}>
-          <div className={`${d.size}-img`}>
+        <SectionEl size={d.size as 'medium' | 'big'} key={i}>
+          <ImageEl size={d.size as 'medium' | 'big'}>
             <Link to={`/${d.link}`}>
               <picture>
                 <source type="image/webp" srcSet={`${d.img}.webp`} />
                 <source type="image/jpg" srcSet={`${d.img}.jpg`} />
-                <img
+                <ImgLink
                   src={`${d.img}.jpg`}
-                  className="imgLink"
                   alt="title"
                   width="100%"
                 />
               </picture>
             </Link>
-          </div>
-          <div className={`projectContent${d.size}`}>
-            <h3 className="projectTitle">{d.title}</h3>
-            <span className="projectDescription">
+          </ImageEl>
+          <ContentEl size={d.size as 'medium' | 'big'} >
+            <H2 fill='var(--magenta)'>{d.title}</H2>
+            <span>
               <ReactMarkdown
                 className="projectDetailsMd"
                 source={d.description}
               />
             </span>
             <br />
-            <Link to={`/${d.link}`} className="viewSite">
-              Read More →
-            </Link>
-          </div>
-        </div>
+            <LinkEl>
+              <Link to={`/${d.link}`}>
+                View Case Study →
+              </Link>
+            </LinkEl>
+          </ContentEl>
+        </SectionEl>
       );
     }
   );
-  odd = true;
   let projects = DataVizProjectList.map(
     (
       d: {
@@ -70,47 +158,43 @@ const Home: React.FunctionComponent<{}> = () => {
       },
       i: number
     ) => {
-      let clss = odd ? "odd" : "even";
-      odd = d.size === "medium" ? !odd : odd;
       return (
-        <div className={`${d.size} ${clss}`} key={i}>
-          <div className={`${d.size}-img`}>
+        <SectionEl size={d.size as 'medium' | 'big'} key={i}>
+          <ImageEl size={d.size as 'medium' | 'big'}>
             <a href={d.link} rel="noopener noreferrer" target="_blank">
               <picture>
                 <source type="image/webp" srcSet={`${d.img}.webp`} />
                 <source type="image/jpg" srcSet={`${d.img}.jpg`} />
-                <img
+                <ImgLink
                   src={`${d.img}.jpg`}
-                  className="imgLink"
                   alt="title"
                   width="100%"
                 />
               </picture>
             </a>
-          </div>
-          <div className={`projectContent${d.size}`}>
-            <h3 className="projectTitle">{d.title}</h3>
-            <span className="projectDescription">
+          </ImageEl>
+          <ContentEl size={d.size as 'medium' | 'big'} >
+            <H2 fill='var(--green)'>{d.title}</H2>
+            <span>
               <ReactMarkdown
                 className="projectDetailsMd"
                 source={d.description}
               />
             </span>
             <br />
-            <a
+            <A
+              fill='var(--green)'
               href={d.link}
               rel="noopener noreferrer"
-              className="viewSite"
               target="_blank"
             >
               View Site →
-            </a>
-          </div>
-        </div>
+            </A>
+          </ContentEl>
+        </SectionEl>
       );
     }
   );
-  odd = true;
   let tools = ToolsProjectList.map(
     (
       d: {
@@ -122,47 +206,43 @@ const Home: React.FunctionComponent<{}> = () => {
       },
       i: number
     ) => {
-      let clss = odd ? "odd" : "even";
-      odd = d.size === "medium" ? !odd : odd;
       return (
-        <div className={`${d.size} ${clss}`} key={i}>
-          <div className={`${d.size}-img`}>
+        <SectionEl size={d.size as 'medium' | 'big'} key={i}>
+          <ImageEl size={d.size as 'medium' | 'big'}>
             <a href={d.link} rel="noopener noreferrer" target="_blank">
               <picture>
                 <source type="image/webp" srcSet={`${d.img}.webp`} />
                 <source type="image/jpg" srcSet={`${d.img}.jpg`} />
-                <img
+                <ImgLink
                   src={`${d.img}.jpg`}
-                  className="imgLink"
                   alt="title"
                   width="100%"
                 />
               </picture>
             </a>
-          </div>
-          <div className={`projectContent${d.size}`}>
-            <h3 className="projectTitle">{d.title}</h3>
-            <span className="projectDescription">
+          </ImageEl>
+          <ContentEl size={d.size as 'medium' | 'big'} >
+            <H2 fill='var(--green)'>{d.title}</H2>
+            <span>
               <ReactMarkdown
                 className="projectDetailsMd"
                 source={d.description}
               />
             </span>
             <br />
-            <a
+            <A
+              fill='var(--green)'
               href={d.link}
               rel="noopener noreferrer"
-              className="viewSite"
               target="_blank"
             >
               View Site →
-            </a>
-          </div>
-        </div>
+            </A>
+          </ContentEl>
+        </SectionEl>
       );
     }
   );
-  odd = true;
   let talks = TalksList.map(
     (
       d: {
@@ -176,8 +256,6 @@ const Home: React.FunctionComponent<{}> = () => {
       },
       i: number
     ) => {
-      let clss = odd ? "odd" : "even";
-      odd = d.size === "medium" ? !odd : odd;
       let img = d.link ? (
         <a href={d.link} rel="noopener noreferrer" target="_blank">
           <picture>
@@ -204,20 +282,22 @@ const Home: React.FunctionComponent<{}> = () => {
         </picture>
       );
       let link = d.link ? (
-        <a
-          href={d.link}
+        <A
+          fill='var(--purple)'
           rel="noopener noreferrer"
           target="_blank"
-          className="viewSite"
+          href={d.link}
         >
           Watch Video →
-        </a>
+        </A>
       ) : null;
       return (
-        <div className={`${d.size} ${clss}`} key={i}>
-          <div className={`${d.size}-img`}>{img}</div>
-          <div className={`projectContent${d.size}`}>
-            <h3 className="projectTitle">{d.title}</h3>
+        <SectionEl size={d.size as 'medium' | 'big'} key={i}>
+          <ImageEl size={d.size as 'medium' | 'big'}>
+            {img}
+          </ImageEl>
+          <ContentEl size={d.size as 'medium' | 'big'} >
+            <H2 fill='var(--purple)'>{d.title}</H2>
             <span className="projectDescription">
               <ReactMarkdown className="projectDetailsMd" source={d.event} />
               <span className="italics">{d.date}</span>
@@ -225,16 +305,16 @@ const Home: React.FunctionComponent<{}> = () => {
             <br />
             <br />
             {link}
-          </div>
-        </div>
+          </ContentEl>
+        </SectionEl>
       );
     }
   );
   return (
     <div className="container">
-      <div className="header">
-        <h1 className="headerTitle blue">mustafa saifee</h1>
-        <div className="headerBody">
+      <HeaderEl>
+        <H1>mustafa saifee</H1>
+        <div>
           Hello!
           <br />
           <br />
@@ -246,26 +326,42 @@ const Home: React.FunctionComponent<{}> = () => {
           hi!
           <SocialMedia align="left" forAbout={false} />
         </div>
+      </HeaderEl>
+      <SeperatorEl />
+      <div>
+        <SectionTitleEl fill='var(--magenta)'>
+          <h4>
+            UI / UX
+          </h4>
+        </SectionTitleEl>
+        <FeatureEl>{UiUx}</FeatureEl>
       </div>
-      <div className="seperator" />
-      <div className="section dataViz">
-        <h2 className="sectionTitle sansSerif bold">Data Visualization Project</h2>
-        <div className="features">{projects}</div>
+      <SeperatorEl />
+      <div>
+        <SectionTitleEl fill='var(--green)'>
+          <h4>
+            Data Visualization Project
+          </h4>
+        </SectionTitleEl>
+        <FeatureEl>{projects}</FeatureEl>
       </div>
-      <div className="seperator" />
-      <div className="section dataViz">
-        <h2 className="sectionTitle sansSerif bold">Data Visualization Tools</h2>
-        <div className="features">{tools}</div>
+      <SeperatorEl />
+      <div>
+        <SectionTitleEl fill='var(--green)'>
+          <h4>
+            Data Visualization Tools
+          </h4>
+        </SectionTitleEl>
+        <FeatureEl>{tools}</FeatureEl>
       </div>
-      <div className="seperator" />
-      <div className="section UiUx">
-        <h2 className="sectionTitle sansSerif bold">UI / UX</h2>
-        <div className="features">{UiUx}</div>
-      </div>
-      <div className="seperator" />
-      <div className="section talks">
-        <h2 className="sectionTitle sansSerif bold">Talks / Workshops</h2>
-        <div className="features">{talks}</div>
+      <SeperatorEl />
+      <div>
+        <SectionTitleEl fill='var(--purple)'>
+          <h4>
+            Talks / Workshops
+          </h4>
+        </SectionTitleEl>
+        <FeatureEl>{talks}</FeatureEl>
       </div>
     </div>
   );

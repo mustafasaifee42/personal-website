@@ -1,20 +1,33 @@
 import React from "react";
 import SocialMedia from "./SocialMedia";
-import "./css/about.css";
 import { Link } from "react-router-dom";
+import styled from "styled-components";
+
+const ContainerEl = styled.div`
+  margin-top: 11rem;
+`;
+
+const BackButton = styled.div`
+  a {
+    font-style: normal;
+    color: var(--primary);
+  }
+  margin-bottom: 2rem;
+  width: fit-content;
+`;
 
 const Home: React.FunctionComponent<{}> = () => {
   return (
-    <div className="container aboutPage">
-      <Link to={`/`}>
-        <div className="backButton sansSerif">← Back to home</div>
-      </Link>
-      <div className="header about">
+    <ContainerEl className="container">
+      <BackButton>
+        <Link to={`/`}>← Back to home</Link>
+      </BackButton>
+      <div>
         <div>
-          <div className="headerTitle bold blue">
+          <h1>
             Hello! Nice to see you here!
-          </div>
-          <div className="headerBody">
+          </h1>
+          <div>
             <br />
             I’m Mustafa Saifee, a designer and developer with 7+ years of
             experience. My interests include{" "}
@@ -28,7 +41,6 @@ const Home: React.FunctionComponent<{}> = () => {
               href="http://www.iitb.ac.in/"
               rel="noopener noreferrer"
               target="_blank"
-              className="link"
             >
               United Nations Developemnet Programme
             </a>
@@ -37,7 +49,6 @@ const Home: React.FunctionComponent<{}> = () => {
               href="https://www.unicef-irc.org/"
               rel="noopener noreferrer"
               target="_blank"
-              className="link"
             >
               UNICEF Office of Research - Innocenti
             </a>
@@ -71,7 +82,6 @@ const Home: React.FunctionComponent<{}> = () => {
               href="https://www.futurice.com/"
               rel="noopener noreferrer"
               target="_blank"
-              className="link"
             >
               Futurice
             </a>
@@ -86,7 +96,7 @@ const Home: React.FunctionComponent<{}> = () => {
           </div>
         </div>
       </div>
-    </div>
+    </ContainerEl>
   );
 };
 

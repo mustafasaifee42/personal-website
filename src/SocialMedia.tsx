@@ -1,49 +1,68 @@
 import React from "react";
-import "./css/socialMedia.css";
+import styled from "styled-components";
 import Twitter from "./imgs/twitter.svg";
 import LinkedIn from "./imgs/linkedin.svg";
 import Github from "./imgs/github.svg";
 import Email from "./imgs/email.svg";
+
+interface SocialMediaContainerProps {
+  isAbout: boolean;
+  align: string;
+}
+
+const SocialMediaContainer = styled.div<SocialMediaContainerProps>`
+  display: flex;
+  margin:${props => !props.isAbout ? '3rem 0' : '3rem 0 7rem 0'};
+  justify-content: ${props => props.align === 'center' ? 'center' : 'flex-start'};;
+`;
+
+
+const IconsEl = styled.img`
+  margin:0 5px; 
+  width:36px;
+  height:36px;
+  &:hover{
+    filter: grayscale(100%);
+    transition: 0.5s;
+  }
+`;
+
 
 const SocialMedia: React.FunctionComponent<{
   align: string;
   forAbout: boolean;
 }> = (props) => {
   return (
-    <div
-      className={`${
-        props.forAbout ? "socialMediaContainerForAbout" : "socialMediaContainer"
-      } ${props.align}`}
-    >
+    <SocialMediaContainer isAbout={props.forAbout} align={props.align}>
       <a
         href="mailto:saifee.mustafa@gmail.com"
         rel="noopener noreferrer"
         target="_blank"
       >
-        <img src={Email} alt="email-icon" className="icons" />
+        <IconsEl src={Email} alt="email-icon" />
       </a>
       <a
         href="https://twitter.com/mustafasaifee42"
         rel="noopener noreferrer"
         target="_blank"
       >
-        <img src={Twitter} alt="twitter-icon" className="icons" />
+        <IconsEl src={Twitter} alt="twitter-icon" />
       </a>
       <a
         href="https://www.linkedin.com/in/mustafasaifee/"
         rel="noopener noreferrer"
         target="_blank"
       >
-        <img src={LinkedIn} alt="linkedin-icon" className="icons" />
+        <IconsEl src={LinkedIn} alt="linkedin-icon" />
       </a>
       <a
         href="https://github.com/mustafasaifee42/"
         rel="noopener noreferrer"
         target="_blank"
       >
-        <img src={Github} alt="github-icon" className="icons" />
+        <IconsEl src={Github} alt="github-icon" />
       </a>
-    </div>
+    </SocialMediaContainer>
   );
 };
 
