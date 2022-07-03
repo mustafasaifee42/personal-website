@@ -221,7 +221,7 @@ const VROhjusSmall: React.FunctionComponent<{}> = () => {
             <SideColumnHeadEl>Agency</SideColumnHeadEl>
             <div>Futurice</div>
             <SideColumnHeadEl>Year</SideColumnHeadEl>
-            <div>2021</div>
+            <div>2020</div>
           </MetaDataColumn>
           <RoleColumn>
             <SideColumnHeadEl>My Role</SideColumnHeadEl>
