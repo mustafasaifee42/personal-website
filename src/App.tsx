@@ -9,6 +9,9 @@ import FortumApollo from "./Projects/FortumApollo";
 import SocialMedia from "./SocialMedia";
 import VROhjus from "./Projects/VROhjus";
 import OmaFingrid from "./Projects/OmaFingrid";
+import FortumApolloSmall from "./Projects/FortumApolloSmall";
+import OmaFingridSmall from "./Projects/OmaFingridSmall";
+import VROhjusSmall from "./Projects/VROhjusSmall";
 
 ReactGA.initialize("UA-32895936-1");
 ReactGA.set({ anonymizeIp: true });
@@ -217,6 +220,13 @@ function App() {
           }}
         />
         <Route
+          path={`/fortum-apollo-small`}
+          exact
+          render={() => {
+            return <FortumApolloSmall />;
+          }}
+        />
+        <Route
           path={`/vr-ohjus`}
           exact
           render={() => {
@@ -224,10 +234,24 @@ function App() {
           }}
         />
         <Route
+          path={`/vr-ohjus-small`}
+          exact
+          render={() => {
+            return <VROhjusSmall />;
+          }}
+        />
+        <Route
           path={`/oma-fingrid`}
           exact
           render={() => {
             return <OmaFingrid />;
+          }}
+        />
+        <Route
+          path={`/oma-fingrid-small`}
+          exact
+          render={() => {
+            return <OmaFingridSmall />;
           }}
         />
         <FooterEl>
