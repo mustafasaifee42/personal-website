@@ -6,6 +6,7 @@ import DataVizProjectList from "./dataViz.json";
 import ToolsProjectList from "./dataVizTools.json";
 import UiUxList from "./ui-ux.json";
 import TalksList from "./talks.json";
+import DashboardList from "./dashboards.json";
 import styled from "styled-components";
 
 interface SectionTitleElProps {
@@ -45,10 +46,15 @@ const A  = styled.a<SectionTitleElProps>`
   }
 `;
 
-const LinkEl = styled.div`
+interface LinkElProp {
+  color: string,
+}
+
+const LinkEl = styled.div<LinkElProp>`
+  margin-right: 2rem;
   a {
     font-style: normal;
-    color: var(--magenta);
+    color: ${props => props.color};
     &:hover {
       text-decoration: underline;
     }
@@ -137,7 +143,7 @@ const Home: React.FunctionComponent<{}> = () => {
               />
             </span>
             <br />
-            <LinkEl>
+            <LinkEl color='var(--magenta)'>
               <Link to={`/${d.link}`}>
                 View Case Study →
               </Link>
@@ -155,6 +161,7 @@ const Home: React.FunctionComponent<{}> = () => {
         size: string;
         description: string;
         link: string;
+        caseStudy?: string;
       },
       i: number
     ) => {
@@ -182,14 +189,97 @@ const Home: React.FunctionComponent<{}> = () => {
               />
             </span>
             <br />
-            <A
-              fill='var(--green)'
-              href={d.link}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              View Site →
-            </A>
+            <div style={{ display: 'flex'}}>
+              {
+                d.caseStudy ? 
+                <LinkEl  color='var(--green)'>
+                  <Link to={`/${d.caseStudy}`}>
+                    View Case Study →
+                  </Link>
+                </LinkEl> : null
+              }
+              <A
+                fill='var(--green)'
+                href={d.link}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                View Site →
+              </A>
+            </div>
+          </ContentEl>
+        </SectionEl>
+      );
+    }
+  );
+  let Dashboards = DashboardList.map(
+    (
+      d: {
+        title: string;
+        img: string;
+        size: string;
+        description: string;
+        link: string;
+        caseStudy?: string;
+      },
+      i: number
+    ) => {
+      return (
+        <SectionEl size={d.size as 'medium' | 'big'} key={i}>
+          <ImageEl size={d.size as 'medium' | 'big'}>
+            {
+              d.caseStudy ? 
+                <Link to={`/${d.caseStudy}`}>
+                  <picture>
+                    <source type="image/webp" srcSet={`${d.img}.webp`} />
+                    <source type="image/jpg" srcSet={`${d.img}.jpg`} />
+                    <ImgLink
+                      src={`${d.img}.jpg`}
+                      alt="title"
+                      width="100%"
+                    />
+                  </picture>
+                </Link>
+              : <a href={d.link} rel="noopener noreferrer" target="_blank">
+                <picture>
+                  <source type="image/webp" srcSet={`${d.img}.webp`} />
+                  <source type="image/jpg" srcSet={`${d.img}.jpg`} />
+                  <ImgLink
+                    src={`${d.img}.jpg`}
+                    alt="title"
+                    width="100%"
+                  />
+                </picture>
+              </a>
+            }
+          </ImageEl>
+          <ContentEl size={d.size as 'medium' | 'big'} >
+            <H2 fill='var(--green)'>{d.title}</H2>
+            <span>
+              <ReactMarkdown
+                className="projectDetailsMd"
+                source={d.description}
+              />
+            </span>
+            <br />
+            <div style={{ display: 'flex'}}>
+              {
+                d.caseStudy ? 
+                <LinkEl  color='var(--green)'>
+                  <Link to={`/${d.caseStudy}`}>
+                    View Case Study →
+                  </Link>
+                </LinkEl> : null
+              }
+              <A
+                fill='var(--green)'
+                href={d.link}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                View Site →
+              </A>
+            </div>
           </ContentEl>
         </SectionEl>
       );
@@ -340,7 +430,16 @@ const Home: React.FunctionComponent<{}> = () => {
       <div>
         <SectionTitleEl fill='var(--green)'>
           <h4>
-            Data Visualization Project
+            Dashboards
+          </h4>
+        </SectionTitleEl>
+        <FeatureEl>{Dashboards}</FeatureEl>
+      </div>
+      <SeperatorEl />
+      <div>
+        <SectionTitleEl fill='var(--green)'>
+          <h4>
+            Data Stories
           </h4>
         </SectionTitleEl>
         <FeatureEl>{projects}</FeatureEl>

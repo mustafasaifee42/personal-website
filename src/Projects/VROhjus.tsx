@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ImageGallery from 'react-image-gallery';
 import styled from "styled-components";
+import "react-image-gallery/styles/css/image-gallery.css";
 
 const El = styled.div`
   margin-top: 7.2rem;
@@ -75,7 +77,6 @@ const SectionTwoColumnEl = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  color: var(--white);
 `;
 const FeedbackSectionEl = styled.div`
   padding: 8rem 2rem;
@@ -85,27 +86,47 @@ const FeedbackSectionEl = styled.div`
   color: var(--primary);
 `;
 
-const SectionEl = styled.div`
+const TopSectionEl = styled.div`
   padding: 8rem 2rem;
   max-width: 96rem;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 2rem;
+  line-height: 3rem;
   h3 {
     font-size: 3.6rem;
     font-family: 'IBM Plex Sans', sans-serif;
     font-Weight: bold;
     margin: 2rem 0;
   }
-  h4 {
-    font-size: 2.4rem;
-    font-family: 'IBM Plex Sans', sans-serif;
-    margin: 2rem 0;
-    line-height: 4rem;
-    font-weight: normal;
-    text-transform: none;
-  }
 `;
+
+const MetaDataColumn = styled.div`
+  width: calc(20% - 1.5rem);
+  font-size: 1.6rem;
+`;
+
+const RoleColumn = styled.div`
+  width: calc(20% - 1.5rem);
+  font-size: 1.6rem;
+`;
+
+const AboutColumn = styled.div`
+  width: calc(60% - 4.5rem);
+  padding-left: 3rem;
+`;
+
+const SideColumnHeadEl = styled.div`
+  font-size: 1.8rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-Weight: bold;
+  text-transform: uppercase;
+  margin: 2rem 0 0 0;
+`;
+
 const FeatureSectionEl = styled.div`
   padding: 8rem 2rem;
   max-width: 128rem;
@@ -118,9 +139,6 @@ const SectionContainer = styled.div`
   background-color: var(--white);
 `;
 
-const SectionBgContainer = styled.div`
-  background-color: var(--primary);
-`;
 
 const HeadEl = styled.div`
   font-size: 2.4rem;
@@ -135,25 +153,6 @@ const BodyEl = styled.div`
   font-family: 'IBM Plex Sans', sans-serif;
   margin: 2rem 0;
   line-height: 3rem;
-`;
-
-const RoleContainer = styled.div`
-  display: flex;     
-  margin-bottom: 2rem; 
-  flex-wrap: wrap;
-`;
-
-const RoleEl = styled.div`
-  padding: 1rem;
-  background-color: rgba(255,255,255,0.75);
-  font-size: 1.6rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: 'IBM Plex Sans', sans-serif;
-  margin-top: 1rem;
-  margin-right: 1rem;
-  border-radius: 0.5rem;
-  color: var(--primary);
 `;
 
 const FeatureEl = styled.div`
@@ -205,6 +204,11 @@ const LinkEl = styled.div`
   font-style: normal;
 `;
 
+const FeatureSectionHead = styled.div`
+  max-width: 96rem;
+  margin: auto;
+`
+
 const VROhjus: React.FunctionComponent<{}> = () => {
     return (
       <El>
@@ -215,61 +219,94 @@ const VROhjus: React.FunctionComponent<{}> = () => {
             <Subnote><span className="bold">Client</span>: VR | <span className="bold">Agency</span>: Futurice</Subnote>
           </ContainerEl>
         </HeroBannerEl>
-        <SectionEl>
-          <h3>
-            About the Project
-          </h3>
-          <h4>
-          Ohjus combines real-time data sources with longer-term planning. Data sourced from different sources and visualized together in one solution provide operators with a holistic, up-to-date view of commuter rail traffic, allowing them to gain a quick understanding of the current traffic situation and adapt their decisions based on real data.
-          </h4>
-        </SectionEl>
-        <SectionBgContainer>
-          <SectionTwoColumnEl>
-            <ColumnEl>
-              <HeadEl>
-                The Challenge
-              </HeadEl>
-              <BodyEl>
-                On average, two trains leave Helsinki railway station every minute during the rush hours. The operations center for commuter traffic manages disturbances in the commuter train traffic caused by, e.g. rail infrastructure issues, technical problems with trains, drivers or other staff availability. Disturbance management requires fast decision-making, so support systems and tools play a central role.
-                <br />
-                <br />
-                VR wanted to develop a system that provides real-time situational awareness for different user groups, automates simple tasks as well as communication and supports operations center decision-making by using models based on analytics. VR also wanted to combine functionality of multiple different apps into a single interface so that users don’t have to manage multiple workflows.
-              </BodyEl>
-            </ColumnEl>
-            <ColumnEl>
-              <HeadEl>
-                My Role
-              </HeadEl>
-              <BodyEl>
-                I worked in a cross functional team of 10+ developers and designers to design and develop a web app that uses real-time data for improved and more reliable rail service. I was mainly responsible for UI/UX design and was one of 5 front-end developer implementing the designs.  
-              </BodyEl>
-              <RoleContainer>
-                <RoleEl>
-                  UX design
-                </RoleEl>
-                <RoleEl>
-                  UI Design
-                </RoleEl>
-                <RoleEl>
-                  Interaction Design
-                </RoleEl>
-                <RoleEl>
-                  Map Design 
-                </RoleEl>
-                <RoleEl>
-                  Front-End Development 
-                </RoleEl>
-              </RoleContainer>
-            </ColumnEl>
-          </SectionTwoColumnEl>
-        </SectionBgContainer> 
+        <TopSectionEl>
+          <MetaDataColumn>
+            <SideColumnHeadEl>Client</SideColumnHeadEl>
+            <div>VR Group</div>
+            <SideColumnHeadEl>Agency</SideColumnHeadEl>
+            <div>Futurice</div>
+            <SideColumnHeadEl>Year</SideColumnHeadEl>
+            <div>2020</div>
+          </MetaDataColumn>
+          <RoleColumn>
+            <SideColumnHeadEl>My Role</SideColumnHeadEl>
+            <div>UX Design</div>
+            <div>UI Design</div>
+            <div>Visual Design</div>
+            <div>Interaction Design</div>
+            <div>Front-End Development</div>
+          </RoleColumn>
+          <AboutColumn>
+            <SideColumnHeadEl>
+              About the Project
+            </SideColumnHeadEl>
+            <div>
+              Ohjus combines real-time data sources with longer-term planning. Data sourced from different sources and visualized together in one solution provide operators with a holistic, up-to-date view of commuter rail traffic, allowing them to gain a quick understanding of the current traffic situation and adapt their decisions based on real data.
+            </div>
+          </AboutColumn>
+        </TopSectionEl>
+        <div style={{width: '100%'}}>
+          <ImageGallery 
+            items={[
+              {
+                original: './img/UiUx/mockups/VROhjus/img6.jpg',
+              },
+              {
+                original: './img/UiUx/mockups/VROhjus/img7.jpg',
+              },
+              {
+                original: './img/UiUx/mockups/VROhjus/img9.jpg',
+              },
+              {
+                original: './img/UiUx/mockups/VROhjus/img8.jpg',
+              },
+            ]} 
+            autoPlay={true}
+            showBullets={true}
+            showThumbnails={false}
+            showPlayButton={false}
+            showFullscreenButton={false}
+            showNav={false}
+            slideDuration={500}
+            slideInterval={4000}
+          />      
+        </div>
+        <SectionTwoColumnEl>
+          <ColumnEl>
+            <HeadEl>
+              The Challenge
+            </HeadEl>
+            <BodyEl>
+              On average, two trains leave Helsinki railway station every minute during the rush hours. The operations center for commuter traffic manages disturbances in the commuter train traffic caused by, e.g. rail infrastructure issues, technical problems with trains, drivers or other staff availability. Disturbance management requires fast decision-making, so support systems and tools play a central role.
+              <br />
+              <br />
+              VR wanted to develop a system that provides real-time situational awareness for different user groups, automates simple tasks as well as communication and supports operations center decision-making by using models based on analytics. VR also wanted to combine functionality of multiple different apps into a single interface so that users don’t have to manage multiple workflows.
+            </BodyEl>
+          </ColumnEl>
+          <ColumnEl>
+            <HeadEl>
+              Approach
+            </HeadEl>
+            <BodyEl>
+              The main objective of the project was to create a visual real-time situational awareness on rolling stock and personnel and use alerts to ensure that disturbances are noticed before they affect customers.
+              <br />
+              <br />
+              We defined an MVP for Ohjus for a chosen user group (operators) and prioritised user needs which were identified by interviewing them. Designs were validated by the end-users and iterated until all user need were met.
+              <br />
+              <br />
+              As the domain is both complex and multifunctional, it’s important that the UI communicates all the possibilities and shortcomings of the data as transparently as possible. We designed a UI that is very vocal when the data is stale or otherwise not correct. 
+            </BodyEl>
+          </ColumnEl>
+        </SectionTwoColumnEl>
         <FeatureSectionEl>
-          <HeadEl>
-            Key features
-          </HeadEl>
-          <BodyEl>
-          The new application creates a visual real-time situational awareness on rolling stock and personnel and use alerts to ensure that disturbances are noticed before they affect customers. It decentralizes operation by different parties based on the same situational awareness in disturbance situations, enabling faster problem solving and reducing unnecessary communication.
-          </BodyEl>
+          <FeatureSectionHead>
+            <HeadEl>
+              Key features & Information Architecture
+            </HeadEl>
+            <BodyEl>
+              The new application creates a visual real-time situational awareness on rolling stock and personnel and use alerts to ensure that disturbances are noticed before they affect customers. It decentralizes operation by different parties based on the same situational awareness in disturbance situations, enabling faster problem solving and reducing unnecessary communication.
+            </BodyEl>
+          </FeatureSectionHead>
           <FeatureEl>
             <TextColumn align='right'>
               <div className="bold">Railyard View</div>
@@ -318,6 +355,16 @@ const VROhjus: React.FunctionComponent<{}> = () => {
         <SeperatorBannerEl />
         <SectionContainer>
           <FeedbackSectionEl>
+            <HeadEl>
+              Evaluation
+            </HeadEl>
+            <BodyEl>
+              The app was also evaluated with end-users in user interviews. The end-users were asked to explore clickthrough prototypes and perform some realistic tasks while thinking-aloud. Users were asked questions about how easy to use and intuitive they thought the prototype was and if there are any features they would like to have more in the application.
+              <br />
+              <br />
+              The result from the user interviews was analysed and necessary improvements were made to the application.
+            </BodyEl>
+            <br />
             <HeadEl>
               Results
             </HeadEl>

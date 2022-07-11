@@ -9,9 +9,11 @@ import FortumApollo from "./Projects/FortumApollo";
 import SocialMedia from "./SocialMedia";
 import VROhjus from "./Projects/VROhjus";
 import OmaFingrid from "./Projects/OmaFingrid";
-import FortumApolloSmall from "./Projects/FortumApolloSmall";
-import OmaFingridSmall from "./Projects/OmaFingridSmall";
-import VROhjusSmall from "./Projects/VROhjusSmall";
+import UNDPAccessAllData from "./Projects/UNDPAccessAllData";
+import GenderedToponyms from "./Projects/GenderedToponyms";
+import AirqDataPortal from "./Projects/AirQDataPortal";
+import ElectionResults from "./Projects/IndianElection";
+import COVID from "./Projects/COVID";
 
 ReactGA.initialize("UA-32895936-1");
 ReactGA.set({ anonymizeIp: true });
@@ -220,24 +222,10 @@ function App() {
           }}
         />
         <Route
-          path={`/fortum-apollo-small`}
-          exact
-          render={() => {
-            return <FortumApolloSmall />;
-          }}
-        />
-        <Route
           path={`/vr-ohjus`}
           exact
           render={() => {
             return <VROhjus />;
-          }}
-        />
-        <Route
-          path={`/vr-ohjus-small`}
-          exact
-          render={() => {
-            return <VROhjusSmall />;
           }}
         />
         <Route
@@ -248,10 +236,38 @@ function App() {
           }}
         />
         <Route
-          path={`/oma-fingrid-small`}
+          path={`/airq-data-portal`}
           exact
           render={() => {
-            return <OmaFingridSmall />;
+            return <AirqDataPortal />;
+          }}
+        />
+        <Route
+          path={`/undp-access-all-data`}
+          exact
+          render={() => {
+            return <UNDPAccessAllData />;
+          }}
+        />
+        <Route
+          path={`/election-results`}
+          exact
+          render={() => {
+            return <ElectionResults />;
+          }}
+        />
+        <Route
+          path={`/covid-dashboard`}
+          exact
+          render={() => {
+            return <COVID />;
+          }}
+        />
+        <Route
+          path={`/gendered-toponyms`}
+          exact
+          render={() => {
+            return <GenderedToponyms />;
           }}
         />
         <FooterEl>

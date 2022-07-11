@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ImageGallery from 'react-image-gallery';
 import styled from "styled-components";
+import "react-image-gallery/styles/css/image-gallery.css";
 
 const El = styled.div`
   margin-top: 7.2rem;
@@ -84,27 +86,39 @@ const FeedbackSectionEl = styled.div`
   color: var(--primary);
 `;
 
-const SectionEl = styled.div`
+const TopSectionEl = styled.div`
   padding: 8rem 2rem;
   max-width: 96rem;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 2rem;
+  line-height: 3rem;
   h3 {
     font-size: 3.6rem;
     font-family: 'IBM Plex Sans', sans-serif;
     font-Weight: bold;
     margin: 2rem 0;
   }
-  h4 {
-    font-size: 2.4rem;
-    font-family: 'IBM Plex Sans', sans-serif;
-    margin: 2rem 0;
-    line-height: 4rem;
-    font-weight: normal;
-    text-transform: none;
-  }
 `;
+
+const MetaDataColumn = styled.div`
+  width: calc(20% - 1.5rem);
+  font-size: 1.6rem;
+`;
+
+const RoleColumn = styled.div`
+  width: calc(20% - 1.5rem);
+  font-size: 1.6rem;
+`;
+
+const AboutColumn = styled.div`
+  width: calc(60% - 4.5rem);
+  padding-left: 3rem;
+`;
+
 const FeatureSectionEl = styled.div`
   padding: 8rem 2rem;
   max-width: 128rem;
@@ -118,16 +132,12 @@ const SectionContainer = styled.div`
 `;
 
 
-const SectionBgContainer = styled.div`
-  background-color: var(--primary);
-`;
-
-const SectionElBG = styled.div`
-  padding: 8rem 2rem;
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--white);
+const SideColumnHeadEl = styled.div`
+  font-size: 1.8rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-Weight: bold;
+  text-transform: uppercase;
+  margin: 2rem 0 0 0;
 `;
 
 const HeadEl = styled.div`
@@ -143,38 +153,6 @@ const BodyEl = styled.div`
   font-family: 'IBM Plex Sans', sans-serif;
   margin: 2rem 0;
   line-height: 3rem;
-`;
-
-const HeadColumnEl = styled.div`
-  font-size: 3rem;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-Weight: bold;
-  margin: 2rem 0;
-`;
-
-const BodyColumnEl = styled.div`
-  font-size: 1.8rem;
-  font-family: 'IBM Plex Sans', sans-serif;
-  margin: 2rem 0;
-  line-height: 2.8rem;
-`;
-
-const RoleContainer = styled.div`
-  display: flex;     
-  margin-bottom: 2rem; 
-`;
-
-const RoleEl = styled.div`
-  padding: 1rem;
-  background-color: rgba(255,255,255,0.75);
-  font-size: 1.6rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: 'IBM Plex Sans', sans-serif;
-  margin-right: 1rem;
-  margin-top: 1rem;
-  border-radius: 0.5rem;
-  color: var(--primary);
 `;
 
 const FeatureEl = styled.div`
@@ -236,47 +214,61 @@ const FortumApollo: React.FunctionComponent<{}> = () => {
             <Subnote><span className="bold">Client</span>: Fortum | <span className="bold">Agency</span>: Futurice</Subnote>
           </ContainerEl>
         </HeroBannerEl>
-        <SectionEl>
-          <h3>
-            About the Project
-          </h3>
-          <h4>
-            Apollo is a forecasting tool that runs the optimizations automatically, unlike the old, manual hydro optimization process. This allows Fortum to spend more time on analyzing the actual results rather than creating them. Apollo models a horizon that ranges from one to several years. This improves the company’s ability to optimize resource utilization and energy production based on seasonal inflow changes relevant to rivers and allows Fortum to react to market volatility in a much more flexible manner.
-          </h4>
-        </SectionEl>
-        <SectionBgContainer>
-          <SectionElBG>
-            <HeadColumnEl>
-              My Role
-            </HeadColumnEl>
-            <BodyColumnEl>
-              I worked in a cross functional team of 7+ developers and designers to design a web app that visualizes result from different models and generate reports which are then used for power generation and pricing forecasting.  
-            </BodyColumnEl>
-            <RoleContainer>
-              <RoleEl>
-                UX design
-              </RoleEl>
-              <RoleEl>
-                UI Design
-              </RoleEl>
-              <RoleEl>
-                Interaction Design
-              </RoleEl>
-              <RoleEl>
-                Data Visualization 
-              </RoleEl>
-            </RoleContainer>
-          </SectionElBG>
-        </SectionBgContainer>
+        <TopSectionEl>
+          <MetaDataColumn>
+            <SideColumnHeadEl>Client</SideColumnHeadEl>
+            <div>Fortum</div>
+            <SideColumnHeadEl>Agency</SideColumnHeadEl>
+            <div>Futurice</div>
+            <SideColumnHeadEl>Year</SideColumnHeadEl>
+            <div>2015</div>
+          </MetaDataColumn>
+          <RoleColumn>
+            <SideColumnHeadEl>My Role</SideColumnHeadEl>
+            <div>UX Design</div>
+            <div>UI Design</div>
+            <div>Visual Design</div>
+            <div>Interaction Design</div>
+            <div>Data Visualization</div>
+          </RoleColumn>
+          <AboutColumn>
+            <SideColumnHeadEl>
+              About the Project
+            </SideColumnHeadEl>
+            <div>
+              Apollo is a forecasting tool that runs the optimizations automatically, unlike the old, manual hydro optimization process Apollo models a horizon that ranges from one to several years. This allows Fortum to spend more time on analyzing the actual results rather than creating them.
+            </div>
+          </AboutColumn>
+        </TopSectionEl>
+        <div style={{width: '100%'}}>
+          <ImageGallery 
+            items={[
+              {
+                original: './img/UiUx/mockups/FortumApollo/img5.jpg',
+              },
+              {
+                original: './img/UiUx/mockups/FortumApollo/img6.jpg',
+              },
+              {
+                original: './img/UiUx/mockups/FortumApollo/img7.jpg',
+              },
+            ]} 
+            autoPlay={true}
+            showBullets={true}
+            showThumbnails={false}
+            showPlayButton={false}
+            showFullscreenButton={false}
+            showNav={false}
+            slideDuration={500}
+            slideInterval={4000}
+          />      
+        </div>
         <SectionTwoColumnEl>
           <ColumnEl>
             <HeadEl>
               The Challenge
             </HeadEl>
             <BodyEl>
-              Hydropower is among the quickest and most efficient ways to regulate the amount of energy the company is making available to the market, thus offering a very good avenue to optimize energy production to increase profitability and reduce the likelihood of environmental impacts.
-              <br />
-              <br />
               In 2015, Fortum began using a new stochastic model to optimize the production of hydropower in the medium term. The improved optimization model produces a staggering volume of data and required a completely new way of presenting the results.
               <br />
               <br />
@@ -288,10 +280,10 @@ const FortumApollo: React.FunctionComponent<{}> = () => {
               Approach
             </HeadEl>
             <BodyEl>
-              The collaboration with Fortum started with a vision project, where our team explored both the user and business needs, followed by co-creating a vision and set of features in order to make sure we are meeting all the user expectations.
+              The collaboration with Fortum started with a vision project, where our team explored both the user and business needs, followed by co-creating a vision and set of features meeting all the user expectations.
               <br />
               <br />
-              When it comes to designing system for expert systems, there’s a lot of detail in how expert operates and fulfil their tasks. Feedback is one of the most important inputs in a user-centered project like Apollo. We also gather ideas from end users and discussed those with them in order to understand the “why” and the need behind them. All the designs were shown and discussed with the end users to make sure the system is not adding any additional cognitive load. As the domain is both complex and multifunctional, it was important to gather feedback from the users frequently to make sure we were on the right track.
+              Feedback is one of the most important inputs in a user-centered project like Apollo. We gathered ideas from end users and discussed those with them in order to understand the “why” and the need behind them. All the designs were shown and discussed with the end users to make sure the system is not adding any additional cognitive load.
             </BodyEl>
           </ColumnEl>
         </SectionTwoColumnEl>
@@ -349,13 +341,13 @@ const FortumApollo: React.FunctionComponent<{}> = () => {
               Results
             </HeadEl>
             <BodyEl>
-            According to the product owner from Fortum the mid-term horizon hydropower forecasts and pricing of water have notably better quality after the implementation of the system.
-            <br />
-            <br />
             There was significant reduction in human errors because of process automation. This also led to users have much more time to analyse the results and make more kinds of different analyses. 
             <br />
             <br />
             New users are able to get started with only a brief introduction because of the visual and simplified UI.
+            <br />
+            <br />
+            According to the product owner from Fortum the mid-term horizon hydropower forecasts and pricing of water have notably better quality after the implementation of the system.
           </BodyEl>
           </FeedbackSectionEl>
         </SectionContainer>

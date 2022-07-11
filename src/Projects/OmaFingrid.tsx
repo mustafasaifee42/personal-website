@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ImageGallery from 'react-image-gallery';
 import styled from "styled-components";
+import "react-image-gallery/styles/css/image-gallery.css";
 
 const El = styled.div`
   margin-top: 7.2rem;
@@ -71,29 +73,51 @@ const FeedbackSectionEl = styled.div`
   color: var(--primary);
 `;
 
-const SectionEl = styled.div`
+
+const TopSectionEl = styled.div`
   padding: 8rem 2rem;
   max-width: 96rem;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 2rem;
+  line-height: 3rem;
   h3 {
     font-size: 3.6rem;
     font-family: 'IBM Plex Sans', sans-serif;
     font-Weight: bold;
     margin: 2rem 0;
   }
-  h4 {
-    font-size: 2.4rem;
-    font-family: 'IBM Plex Sans', sans-serif;
-    margin: 2rem 0;
-    line-height: 4rem;
-    font-weight: normal;
-    text-transform: none;
-  }
 `;
+
+const MetaDataColumn = styled.div`
+  width: calc(20% - 1.5rem);
+  font-size: 1.6rem;
+`;
+
+const RoleColumn = styled.div`
+  width: calc(20% - 1.5rem);
+  font-size: 1.6rem;
+`;
+
+const AboutColumn = styled.div`
+  width: calc(60% - 4.5rem);
+  padding-left: 3rem;
+`;
+
+
+const SideColumnHeadEl = styled.div`
+  font-size: 1.8rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-Weight: bold;
+  text-transform: uppercase;
+  margin: 2rem 0 0 0;
+`;
+
 const FeatureSectionEl = styled.div`
-  padding: 8rem 2rem;
+  padding: 0 2rem 16rem 2rem;
   max-width: 128rem;
   margin-left: auto;
   margin-right: auto;
@@ -104,18 +128,6 @@ const SectionContainer = styled.div`
   background-color: var(--white);
 `;
 
-
-const SectionBgContainer = styled.div`
-  background-color: var(--primary);
-`;
-
-const SectionElBG = styled.div`
-  padding: 8rem 2rem;
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--white);
-`;
 
 const HeadEl = styled.div`
   font-size: 2.4rem;
@@ -130,38 +142,6 @@ const BodyEl = styled.div`
   font-family: 'IBM Plex Sans', sans-serif;
   margin: 2rem 0;
   line-height: 3rem;
-`;
-
-const HeadColumnEl = styled.div`
-  font-size: 3rem;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-Weight: bold;
-  margin: 2rem 0;
-`;
-
-const BodyColumnEl = styled.div`
-  font-size: 1.8rem;
-  font-family: 'IBM Plex Sans', sans-serif;
-  margin: 2rem 0;
-  line-height: 2.8rem;
-`;
-
-const RoleContainer = styled.div`
-  display: flex;     
-  margin-bottom: 2rem; 
-`;
-
-const RoleEl = styled.div`
-  padding: 1rem;
-  background-color: rgba(255,255,255,0.75);
-  font-size: 1.6rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: 'IBM Plex Sans', sans-serif;
-  margin-right: 1rem;
-  margin-top: 1rem;
-  border-radius: 0.5rem;
-  color: var(--primary);
 `;
 
 const OpportunityColumnContainer = styled.div`
@@ -212,6 +192,11 @@ const LinkEl = styled.div`
   font-style: normal;
 `;
 
+const Ul = styled.ul`
+  margin: 0;
+  padding-left: 2rem;
+`;
+
 const OmaFingrid: React.FunctionComponent<{}> = () => {
     return (
       <El>
@@ -222,52 +207,69 @@ const OmaFingrid: React.FunctionComponent<{}> = () => {
             <Subnote><span className="bold">Client</span>: Fingrid | <span className="bold">Agency</span>: Futurice</Subnote>
           </ContainerEl>
         </HeroBannerEl>
-        <SectionEl>
-          <h3>
-            About the Project
-          </h3>
-          <h4>
-            Oma Fingrid is a customer-centric service portal with a positive impact on its users’ everyday work. Together with Fingrid, we co-created an extranet service that visualizes the data for their customers. Oma Fingrid takes staggering amounts of data on Finland’s nationwide grid and visualizes them clearly and comprehensively for Fingrid customers. Oma Fingrid is a single user-friendly, scalable customer portal that replaces numerous different extranets.
-          </h4>
-        </SectionEl>
-        <SectionBgContainer>
-          <SectionElBG>
-            <HeadColumnEl>
-              My Role
-            </HeadColumnEl>
-            <BodyColumnEl>
-              I worked in a team of 5 developers and designers to design a single user-friendly, scalable customer portal.  
-            </BodyColumnEl>
-            <RoleContainer>
-              <RoleEl>
-                UX design
-              </RoleEl>
-              <RoleEl>
-                UI Design
-              </RoleEl>
-              <RoleEl>
-                Interaction Design
-              </RoleEl>
-              <RoleEl>
-                Data Visualization 
-              </RoleEl>
-            </RoleContainer>
-          </SectionElBG>
-        </SectionBgContainer>
+        <TopSectionEl>
+          <MetaDataColumn>
+            <SideColumnHeadEl>Client</SideColumnHeadEl>
+            <div>Fingrid</div>
+            <SideColumnHeadEl>Agency</SideColumnHeadEl>
+            <div>Futurice</div>
+            <SideColumnHeadEl>Year</SideColumnHeadEl>
+            <div>2019</div>
+          </MetaDataColumn>
+          <RoleColumn>
+            <SideColumnHeadEl>My Role</SideColumnHeadEl>
+            <div>UX Design</div>
+            <div>UI Design</div>
+            <div>Visual Design</div>
+            <div>Interaction Design</div>
+            <div>Data Visualization</div>
+          </RoleColumn>
+          <AboutColumn>
+            <SideColumnHeadEl>
+              About the Project
+            </SideColumnHeadEl>
+            <div>
+              Oma Fingrid is a user-friendly, scalable, self-serving customer portal with a positive impact on its users’ everyday work. Oma Fingrid takes staggering amounts of data on Finland’s nationwide grid and visualizes them clearly and comprehensively for Fingrid customers.
+            </div>
+          </AboutColumn>
+        </TopSectionEl>
+        <div style={{width: '100%'}}>
+          <ImageGallery 
+            items={[
+              {
+                original: './img/UiUx/mockups/Fingrid/img1.jpg',
+              },
+              {
+                original: './img/UiUx/mockups/Fingrid/img2.jpg',
+              },
+              {
+                original: './img/UiUx/mockups/Fingrid/img3.jpg',
+              },
+            ]} 
+            autoPlay={true}
+            showBullets={true}
+            showThumbnails={false}
+            showPlayButton={false}
+            showFullscreenButton={false}
+            showNav={false}
+            slideDuration={500}
+            slideInterval={4000}
+          />      
+        </div>
         <SectionTwoColumnEl>
           <ColumnEl>
             <HeadEl>
               The Challenge
             </HeadEl>
             <BodyEl>
-              Faced with a rapidly changing regulatory environment and electricity market, Fingrid has chosen customer-centricity as the core of its strategy. To communicate with their stakeholders Fingrid had numerous extranets. This caused numerous issues:
+              To communicate with their stakeholders, Fingrid had numerous extranets. The user experience of using multiple extranet was not good because of the following reasons: 
+              <Ul>
+                <li>All the extranets had their own user management, therefore same user had mULtiple accounts. Because of this the user were also not able to switch between the extranets easily.</li>
+                <li>All the extranets didn’t had a consistent design.</li>
+                <li>The extranet's didn't have a self-service interface i.e. it didn't suppoort role-based access control, user management, or data download.</li>
+              </Ul>
               <br />
-              <br />
-              All the extranets had their own user management, therefore same user had multiple accounts. Because of this the user were also not able to switch between the extranets easily.
-              <br />
-              All the extranets didn’t had a consistent design. 
-              <br />
-              The information and interactions in each extranets were governed by the user groups rather than the function of the extranet. That caused a lot of redundancy as same information was present in multiple extranets with different terminology.
+              To improve the experience for the end users, Fingrid wanted to replace the numerous extranets with one user-friendly, scalable customer portal with a self-service UI.
             </BodyEl>
           </ColumnEl>
           <ColumnEl>
@@ -275,9 +277,6 @@ const OmaFingrid: React.FunctionComponent<{}> = () => {
               Approach
             </HeadEl>
             <BodyEl>
-              The first step in offering the best service to its customers, Finnish power plants, industrial plants and regional electricity distribution networks was to replace the numerous extranets with one user-friendly, scalable customer portal. 
-              <br />
-              <br />
               To combine different extranets into single customer portal we first reimagined the information architecture of all the extranets based on user interviews and workshop involving the stakeholders. We grouped all the functionality in different application within the portal based on a card sorting workshop with the stake holders.
               <br />
               <br />
@@ -314,16 +313,29 @@ const OmaFingrid: React.FunctionComponent<{}> = () => {
         <SectionContainer>
           <FeedbackSectionEl>
             <HeadEl>
+              Evaluation
+            </HeadEl>
+            <BodyEl>
+              The portal was also evaluated with end-users and Fingrid employees in user interviews. The end-users were asked to explore clickthrough prototypes and perform some realistic tasks while thinking-aloud. Users were asked questions about how easy to use and intuitive they thought the prototype was.
+              <br />
+              <br />
+              Users were also asked to explore the navigation and information architecture of the portal and were asked if they felt the information heirarchy was intuitive.
+              <br />
+              <br />
+              The result from the user interviews was analysed and necessary improvements were made to the design of application.
+            </BodyEl>
+            <br />
+            <HeadEl>
               Results
             </HeadEl>
             <BodyEl>
-            According to the product owner from Fingrid, Oma Fingrid is an important step towards answering the needs of the dispersed electricity market and a carbon-neutral Finland, as the new operators can join in it easily and the information flow gets close to real-time. 
+            Oma Fingrid proved to be an important step towards answering the needs of the dispersed electricity market and a carbon-neutral Finland, as the new operators can join in it easily and the information flow gets close to real-time. 
             <br/>
             <br />
-            Clearly visualized and detailed data to help decision-making and in daily tasks, bringing competitive advantage and results to Fingrid`s customers. 
+            Visualization of data in easy to understand graphs and quick and easy access to the necessary information helped decision-making and in daily tasks, bringing competitive advantage and results to Fingrid`s customers. 
             <br />
             <br />
-            Quick and easy access to the necessary information, be it electricity consumption by trends or by position, billing, contracts, grid distractions or fieldwork notes.
+            The new User Access Managment also helped reduce load on Fingrid staff, as now the admins could manage user themselves and Fingrid staff didn't had to add and remove users for them.  
           </BodyEl>
           </FeedbackSectionEl>
         </SectionContainer>
