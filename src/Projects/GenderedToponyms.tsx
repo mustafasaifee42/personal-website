@@ -216,10 +216,10 @@ const GenderedToponyms: React.FunctionComponent<{}> = () => {
               About the Project
             </SideColumnHeadEl>
             <div>
-              Places and streets names define how a person interacts with a city. Often they are named after important personalities, gods, and goddesses. The project aims to study and visualize the distribution of gender in eponymous streets.
+              Places and street names define how a person interacts with a city. Often they are named after important personalities, gods, and goddesses. The project aims to study and visualize the distribution of gender in eponymous streets.
               <br />
               <br />
-              The the visualization and data is open source and the source code of the visualization can be found on <a href='https://github.com/mustafasaifee42/gender-street-name' rel="noopener noreferrer"  target='_blank'>Github</a>.
+              The visualization and data are open-source and the source code of the visualization can be found on <a href='https://github.com/mustafasaifee42/gender-street-name' rel="noopener noreferrer"  target='_blank'>Github</a>.
             </div>
           </AboutColumn>
         </TopSectionEl>
@@ -231,7 +231,7 @@ const GenderedToponyms: React.FunctionComponent<{}> = () => {
             Berlin, Germany
           </HeadEl>
           <BodyEl>
-            The dataset for Berlin can be downloaded from <a href='https://github.com/mustafasaifee42/gender-street-name/blob/main/public/data/Berlin/mapData.json' rel="noopener noreferrer" target='_blank'>here</a>
+            The dataset for Berlin can be downloaded <a href='https://github.com/mustafasaifee42/gender-street-name/blob/main/public/data/Berlin/mapData.json' rel="noopener noreferrer" target='_blank'>here</a>
           </BodyEl>
         </SectionTwoColumnEl>
         <IMGContainer>
@@ -242,7 +242,7 @@ const GenderedToponyms: React.FunctionComponent<{}> = () => {
             Delhi, India
           </HeadEl>
           <BodyEl>
-            The dataset for Delhi can be downloaded from <a href='https://github.com/mustafasaifee42/gender-street-name/blob/main/public/data/Delhi/mapData.json' rel="noopener noreferrer" target='_blank'>here</a>
+            The dataset for Delhi can be downloaded <a href='https://github.com/mustafasaifee42/gender-street-name/blob/main/public/data/Delhi/mapData.json' rel="noopener noreferrer" target='_blank'>here</a>
           </BodyEl>
         </SectionTwoColumnEl>
         <IMGContainer>
@@ -253,7 +253,7 @@ const GenderedToponyms: React.FunctionComponent<{}> = () => {
             Helsinki, Finland
           </HeadEl>
           <BodyEl>
-            The dataset for Helsinki can be downloaded from <a href='https://github.com/mustafasaifee42/gender-street-name/blob/main/public/data/Helsinki/mapData.json' rel="noopener noreferrer" target='_blank'>here</a>
+            The dataset for Helsinki can be downloaded <a href='https://github.com/mustafasaifee42/gender-street-name/blob/main/public/data/Helsinki/mapData.json' rel="noopener noreferrer" target='_blank'>here</a>
           </BodyEl>
         </SectionTwoColumnEl>
         <IMGContainer>
@@ -264,7 +264,7 @@ const GenderedToponyms: React.FunctionComponent<{}> = () => {
             Mumbai, India
           </HeadEl>
           <BodyEl>
-            The dataset for Mumbai can be downloaded from <a href='https://github.com/mustafasaifee42/gender-street-name/blob/main/public/data/Mumbai/mapData.json' rel="noopener noreferrer" target='_blank'>here</a>
+            The dataset for Mumbai can be downloaded <a href='https://github.com/mustafasaifee42/gender-street-name/blob/main/public/data/Mumbai/mapData.json' rel="noopener noreferrer" target='_blank'>here</a>
           </BodyEl>
         </SectionTwoColumnEl>
         <IMGContainer>

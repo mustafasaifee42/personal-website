@@ -246,7 +246,7 @@ const ElectionResults: React.FunctionComponent<{}> = () => {
               About the Project
             </SideColumnHeadEl>
             <div>
-              Elections are a massive affair for both media houses and citizens. This tool visualizes the results of Indian General Election from 2019. The objective was to offer a good visual election reporting and let users gain meaningful insights by exploring the visualization.
+              Elections are a massive affair for both media houses and citizens. This tool visualizes the results of the Indian General Election from 2019. The objective was to offer good visual election reporting and let users gain meaningful insights by exploring the visualization.
             </div>
           </AboutColumn>
         </TopSectionEl>
@@ -258,10 +258,10 @@ const ElectionResults: React.FunctionComponent<{}> = () => {
             Hexagonal TIle Grid Map
           </HeadEl>
           <BodyEl>
-            Tile grid map is a variation of choropleth map. In this map, areas are reduced to a uniform size hexagons and the tiles are arranged to roughly approximate their real-world geographic locations. Tile grid maps avoid the visual imbalances inherent to traditional choropleths because of the area of the regions. Tile grid maps are a great option for mapped region data where area are not part of the story we’re trying to tell with the map.
+            Tile grid map is a variation of a choropleth map. In this map, areas are reduced to uniform size hexagons and the tiles are arranged to roughly approximate their real-world geographic locations. Tile grid maps avoid the visual imbalances inherent to traditional choropleths because of the area of the regions. Tile grid maps are a great option for mapped region data where areas are not part of the story we’re trying to tell with the map.
             <br />
             <br />
-            Since a hexagonal tile grid map didn't exist for Indian constituency I started first by designing and building and open source hexagonal tile grid map for Indian contituencies.
+            Since a hexagonal tile grid map didn't exist for the Indian constituency I started first by designing and building an open-source hexagonal tile grid map for Indian constituencies.
             <br />
             <img src='./img/dataViz/lsResult/img2.png' alt="Access all data info" width="100%" style={{maxWidth: '960px'}}  />
             <br />
@@ -277,7 +277,7 @@ const ElectionResults: React.FunctionComponent<{}> = () => {
             The tool is for users to explore the data and let users gain meaningful insights by exploring the visualization and adding different filters.
             <br />
             <br />
-            The tool also lets users filter data based on political party, gender, caste, religion, total assets, victory margin of the winners.
+            The tool also lets users filter data based on political party, gender, caste, religion, total assets, and victory margin of the winners.
           </BodyEl>
         </SectionTwoColumnEl>
         <img src='./img/dataViz/lsResult/img4.jpg' alt="Access all data info" width="100%" />
@@ -303,7 +303,7 @@ const ElectionResults: React.FunctionComponent<{}> = () => {
             <TextColumn align='left'>
               <div className="bold">List View</div>
               <div>
-                List view provide list of all the winner that can be sorted by total assets, political party, states, education qualification, or criminal cases
+                List view provides a list of all the winners that can be sorted by total assets, political party, states, education qualification, or criminal cases.
               </div>
             </TextColumn>
           </FeatureEl>

@@ -248,7 +248,7 @@ const AirqDataPortal: React.FunctionComponent<{}> = () => {
               About the Project
             </SideColumnHeadEl>
             <div>
-              AirQ visualizes near real-time data and historical data of concentration on particulate matter less than 2.5 microns (PM 2.5) in diameter in the air. The portal allows users to to spot global patterns, and drill into patterns and trends on a country or city level.
+              AirQ visualizes near real-time data and historical data of concentration on particulate matter less than 2.5 microns (PM 2.5) in diameter in the air. The portal allows users to spot global patterns, and drill into patterns and trends on a country or city level.
             </div>
           </AboutColumn>
         </TopSectionEl>
@@ -260,10 +260,10 @@ const AirqDataPortal: React.FunctionComponent<{}> = () => {
             Concept
           </HeadEl>
           <BodyEl>
-            AirQ Data Portal is designed to let users visualize and analyze air quality in different countries and cities. Its an interactive tool that translates the data into a form that is easy to understand for everyone by comparing air quality to cigarette smoking and using health indicators based on US's EPA.
+            AirQ Data Portal is designed to let users visualize and analyze air quality in different countries and cities. It's an interactive tool that translates the data into a form that is easy to understand for everyone by comparing air quality to cigarette smoking and using health indicators based on US's EPA.
             <br />
             <br />
-            Each country and city have there own page where users can see near real time air quality data as well as analyze historical data.
+            Each country and city have its page where users can see near real-time air quality data as well as analyze historical data.
           </BodyEl>
           <IMGContainer>
             <img src='./img/dataViz/AirQ/img2.png' alt="Access all data info" width="100%" style={{maxWidth: '960px'}} />
@@ -277,7 +277,7 @@ const AirqDataPortal: React.FunctionComponent<{}> = () => {
             <TextColumn align='right'>
               <div className="bold">Particle Visualization</div>
               <div>
-                Visualizes the concentration of PM2.5 particle as floating black circle on white background. They work well with respect to visual design, and from a metaphorical point of view (higher the  concetration the more polluted the air the more black particles on a white background).
+                Visualizes the concentration of PM2.5 particles as floating black circles on white background. They work well for visual design, and from a metaphorical point of view (the higher the concentration the more polluted the air the more black particles on a white background).
               </div>
             </TextColumn>
             <ImgColumn>
@@ -291,7 +291,7 @@ const AirqDataPortal: React.FunctionComponent<{}> = () => {
             <TextColumn align='left'>
               <div className="bold">Air Quality Strip</div>
               <div>
-                Use a series of coloured stripes chronologically ordered to visually portray long-term air quality trend.  The stripes uses colour alone to visualize the air quslity to avoid technical distractions and intuitively convey air quality trends to non-scientists.
+                Use a series of colored stripes chronologically ordered to visually portray long-term air quality trends. The stripes use colors alone to visualize the air quality to avoid technical distractions and intuitively convey air quality trends to non-scientists.
               </div>
             </TextColumn>
           </FeatureEl>
@@ -299,7 +299,7 @@ const AirqDataPortal: React.FunctionComponent<{}> = () => {
             <TextColumn align='right'>
               <div className="bold">Air Quality Cigarette Equivalence</div>
               <div>
-                Makes the PM2.5 concentration data more understandable and accesible to non-scientists by comparing the breathing bad quality air to smoking cigarettes. 
+                Makes the PM2.5 concentration data more understandable and accessible to non-scientists by comparing breathing bad quality air to smoking cigarettes. 
               </div>
             </TextColumn>
             <ImgColumn>
@@ -313,7 +313,7 @@ const AirqDataPortal: React.FunctionComponent<{}> = () => {
             <TextColumn align='left'>
               <div className="bold">Heatmap for Air Quality by Time of Day</div>
               <div>
-                Lets user identify which time of the day air quality is good  or bad. 
+                Lets the user identify which time of the day air quality is good or bad. 
               </div>
             </TextColumn>
           </FeatureEl>
@@ -321,7 +321,7 @@ const AirqDataPortal: React.FunctionComponent<{}> = () => {
             <TextColumn align='right'>
               <div className="bold">Time Series</div>
               <div>
-                Visualizated historical data of PM2.5 concetration and lets users identify any trends or patterns. 
+                Visualize historical data of PM2.5 concentration and lets users identify any trends or patterns. 
               </div>
             </TextColumn>
             <ImgColumn>

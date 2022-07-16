@@ -22,6 +22,7 @@ const HeroBannerEl  = styled.div`
 
 const ContainerEl = styled.div`
   max-width: 96rem;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 0 2rem;
@@ -241,7 +242,7 @@ const UNDPAccessAllData: React.FunctionComponent<{}> = () => {
               About the Project
             </SideColumnHeadEl>
             <div>
-              In an effort to make development data open, and more acccessible; UDNP released Data Futures Platform. This was a tool I designed for the Data futures Platform advanced analysis of correlation between indicators. All indicators and data stored on the platform could be visualized usign different charts.
+              To make development data open, and more accessible; UDNP released the Data Futures Platform. This was a tool I designed for the Data futures Platform advanced analysis of the correlation between indicators. All indicators and data stored on the platform could be visualized using different charts.
             </div>
           </AboutColumn>
         </TopSectionEl>
@@ -270,16 +271,16 @@ const UNDPAccessAllData: React.FunctionComponent<{}> = () => {
             Key features
           </HeadEl>
           <BodyEl>
-            The tool is designed to be an analytical tool used by users in UN country offices, UN thematic team, governments, policy makers and for advocacy. Since the tool has many different users and use cases, the tool needed to be very flexible and allow users to visualize data in multiple ways for multi-dimensional data analysis.
+            The tool is designed to be an analytical tool used by users in UN country offices, UN thematic team, governments, policymakers, and for advocacy. Since the tool has many different users and use-cases, the tool needed to be very flexible and allow users to visualize data in multiple ways for multi-dimensional data analysis.
             <br />
             <br />
-            The tool also lets users filter data based on countries, regions, human development index and income groups of countries to help them focus on the countries or country groups they might be interested in.
+            The tool also lets users filter data based on countries, regions, human development index, and income groups of countries to help them focus on the countries or country groups they might be interested in.
             <br />
             <br />
-            The tool also lets users animate the data and visualise the change over time. We also added a feature in the tool to visualized the most recent available data for the selected indicators, since all the countries and aganecies dont conduct data collection excercise in the same year or timeline.
+            The tool also lets users animate the data and visualize the change over time. We also added a feature in the tool to visualize the most recent available data for the selected indicators, since all the countries and agencies don't conduct data collection exercises in the same year or timeline.
             <br />
             <br />
-            Tho improve the shareability to differnt visaulization we allow user to download the graph as an image. All the graphs are  embeddable with custom country, time range, etc. selection.
+            To improve the shareability of different visualizations we allow users to download the graph as an image. All the graphs are embeddable with custom country, time range, etc. selection.
           </BodyEl>
         </SectionTwoColumnEl>
         <img src='./img/dataViz/UNDP Access All Data/img1.jpg' alt="Access all data info" width="100%" />
@@ -291,7 +292,7 @@ const UNDPAccessAllData: React.FunctionComponent<{}> = () => {
             <TextColumn align='right'>
               <div className="bold">Multivariate Choropleth Maps</div>
               <div>
-                Displays one or two variables on a single choropleth map. The interface also lets user to project bubbles chart on the map as third variable.
+                Displays one or two variables on a single choropleth map. The interface also lets users project bubbles chart on the map as a third variable.
               </div>
             </TextColumn>
             <ImgColumn>
@@ -305,7 +306,7 @@ const UNDPAccessAllData: React.FunctionComponent<{}> = () => {
             <TextColumn align='left'>
               <div className="bold">Bubble Chart</div>
               <div>
-                Visualizes two or three continuous variable and one discreete variable. This lets users identify correlations and outlier in the data.
+                Visualizes two or three continuous variables and one discrete variable. This lets users identify correlations and outliers in the data.
               </div>
             </TextColumn>
           </FeatureEl>
@@ -313,7 +314,7 @@ const UNDPAccessAllData: React.FunctionComponent<{}> = () => {
             <TextColumn align='right'>
               <div className="bold">Bar Chart</div>
               <div>
-                Lets user rank countries based on the indicator they have selected. Users can change orientation of the chart from horizontal to vertical. 
+                Lets the user rank countries based on the indicator they have selected. Users can change the orientation of the chart from horizontal to vertical. 
               </div>
             </TextColumn>
             <ImgColumn>
@@ -327,7 +328,7 @@ const UNDPAccessAllData: React.FunctionComponent<{}> = () => {
             <TextColumn align='left'>
               <div className="bold">Dual Axis Line Chart</div>
               <div>
-                Lets user compare change over time for two variable for a selected country. 
+                Lets the user compare change over time for two variable for a selected country. 
               </div>
             </TextColumn>
           </FeatureEl>
@@ -335,7 +336,7 @@ const UNDPAccessAllData: React.FunctionComponent<{}> = () => {
             <TextColumn align='right'>
               <div className="bold">Line Chart</div>
               <div>
-                Lets user change over time for a variable across countries. 
+                Lets the user visualize change over time for a variable across countries. 
               </div>
             </TextColumn>
             <ImgColumn>
