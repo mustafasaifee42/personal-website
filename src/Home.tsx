@@ -419,15 +419,6 @@ const Home: React.FunctionComponent<{}> = () => {
       </HeaderEl>
       <SeperatorEl />
       <div>
-        <SectionTitleEl fill='var(--magenta)'>
-          <h4>
-            UI / UX
-          </h4>
-        </SectionTitleEl>
-        <FeatureEl>{UiUx}</FeatureEl>
-      </div>
-      <SeperatorEl />
-      <div>
         <SectionTitleEl fill='var(--green)'>
           <h4>
             Dashboards
@@ -439,19 +430,28 @@ const Home: React.FunctionComponent<{}> = () => {
       <div>
         <SectionTitleEl fill='var(--green)'>
           <h4>
-            Data Stories
+            Data Visualization Tools
           </h4>
         </SectionTitleEl>
-        <FeatureEl>{projects}</FeatureEl>
+        <FeatureEl>{tools}</FeatureEl>
+      </div>
+      <SeperatorEl />
+      <div>
+        <SectionTitleEl fill='var(--magenta)'>
+          <h4>
+            UI / UX
+          </h4>
+        </SectionTitleEl>
+        <FeatureEl>{UiUx}</FeatureEl>
       </div>
       <SeperatorEl />
       <div>
         <SectionTitleEl fill='var(--green)'>
           <h4>
-            Data Visualization Tools
+            Data Stories
           </h4>
         </SectionTitleEl>
-        <FeatureEl>{tools}</FeatureEl>
+        <FeatureEl>{projects}</FeatureEl>
       </div>
       <SeperatorEl />
       <div>

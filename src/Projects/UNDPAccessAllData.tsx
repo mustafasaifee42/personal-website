@@ -230,7 +230,7 @@ const UNDPAccessAllData: React.FunctionComponent<{}> = () => {
           </MetaDataColumn>
           <RoleColumn>
             <SideColumnHeadEl>Link</SideColumnHeadEl>
-            <div><a href='https://data.undp.org/explore-all-data/' rel="noopener noreferrer" target='_blank'>UNDP Access All Data</a></div>
+            <div><a href='https://zealous-sky-017344110.2.azurestaticapps.net/' rel="noopener noreferrer" target='_blank'>UNDP Access All Data</a></div>
             <SideColumnHeadEl>Tools</SideColumnHeadEl>
             <div>Typescript</div>
             <div>D3.js</div>
@@ -346,7 +346,7 @@ const UNDPAccessAllData: React.FunctionComponent<{}> = () => {
         </FeatureSectionEl>
         <LinkBannerEl>
           <LinkBanner>
-            <a href='https://data.undp.org/explore-all-data/' rel="noopener noreferrer" target='_blank'>
+            <a href='https://zealous-sky-017344110.2.azurestaticapps.net/' rel="noopener noreferrer" target='_blank'>
               <ButtonEl>See Interactive Version</ButtonEl>
             </a>
           </LinkBanner>
