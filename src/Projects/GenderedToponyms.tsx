@@ -202,7 +202,7 @@ const GenderedToponyms: React.FunctionComponent<{}> = () => {
           </MetaDataColumn>
           <RoleColumn>
             <SideColumnHeadEl>Link</SideColumnHeadEl>
-            <div><a href='https://gendered-toponyms.mustafasaifee.com/' target={'_black'}>Gendered Toponyms</a></div>
+            <div><a href='https://gendered-toponyms.mustafasaifee.dev/' target={'_black'}>Gendered Toponyms</a></div>
             <SideColumnHeadEl>Tools</SideColumnHeadEl>
             <div>Typescript</div>
             <div>D3.js</div>
@@ -272,7 +272,7 @@ const GenderedToponyms: React.FunctionComponent<{}> = () => {
         </IMGContainer>
         <LinkBannerEl>
           <LinkBanner>
-            <a href='https://gendered-toponyms.mustafasaifee.com/' target={'_black'}>
+            <a href='https://gendered-toponyms.mustafasaifee.dev/' target={'_black'}>
               <ButtonEl>See Interactive Version</ButtonEl>
             </a>
           </LinkBanner>

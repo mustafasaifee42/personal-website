@@ -1,42 +1,33 @@
 [
   {
-    "title": "UNDP Access All Data Tool",
+    "title": "UNDP Data Futures Exchange",
     "size": "big",
     "img": "./img/dataViz/img12",
-    "description": "Tool developed for UNDP for advanced multi-dimensional data analysis of development indicators.",
-    "link": "https://zealous-sky-017344110.2.azurestaticapps.net/",
-    "caseStudy": "undp-access-all-data"
+    "description": "Platform designed and developed for UNDP to empower decision-makers with state-of-the-art data and insights for a transformative impact.",
+    "link": "https://data.undp.org/"
   },
   {
     "title": "Gendered Toponyms",
     "size": "medium",
     "img": "./img/dataViz/img9",
     "description": "Mapping gender imbalance in city street names.",
-    "link": "https://gendered-toponyms.mustafasaifee.com/",
+    "link": "https://gendered-toponyms.mustafasaifee.dev/",
     "caseStudy": "gendered-toponyms"
-  },
-  {
-    "title": "Air Quality Data Portal",
-    "size": "medium",
-    "img": "./img/dataViz/img7",
-    "description": "Compare real-time worldwide air quality levels with interactive air quality (PM 2.5 concentration) and pollution map.",
-    "link": "https://airq.mustafasaifee.com",
-    "caseStudy": "airq-data-portal"
   },
   {
     "title": "Indian General Election Results",
     "size": "medium",
     "img": "./img/dataViz/img3",
     "description": "A visual exploration of World's biggest electoral exercise i.e. Indian general election.",
-    "link": "https://loksabharesults.mustafasaifee.com",
+    "link": "https://loksabharesults.mustafasaifee.dev",
     "caseStudy": "election-results"
   },
   {
     "title": "COVID-19 Dashboard",
-    "size": "medium",
+    "size": "big",
     "img": "./img/dataViz/img6",
     "description": "Tool to track and visualize the spread of COVID-19 coronavirus.",
-    "link": "https://covid19.mustafasaifee.com",
+    "link": "https://covid19.mustafasaifee.dev",
     "caseStudy": "covid-dashboard"
   }
 ]

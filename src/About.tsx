@@ -29,20 +29,20 @@ const Home: React.FunctionComponent<{}> = () => {
           </h1>
           <div>
             <br />
-            I’m Mustafa Saifee, a designer and developer with 7+ years of
+            I'm Mustafa Saifee, a designer and developer with 7+ years of
             experience. My interests include{" "}
             <span className="bold">data visualization</span>{" "}
             <span className="bold">Information Design</span>, and{" "}
             <span className="bold">UI/UX Design</span>.
             <br />
             <br />I enjoy doing projects which helps make data more relatable
-            and understandable. I have workded with{" "}
+            and understandable. I have worked with{" "}
             <a
               href="http://www.iitb.ac.in/"
               rel="noopener noreferrer"
               target="_blank"
             >
-              United Nations Developemnet Programme
+              United Nations Development Programme
             </a>
             {" "}and{" "}
             <a

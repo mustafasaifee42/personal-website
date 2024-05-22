@@ -203,7 +203,7 @@ const COVID: React.FunctionComponent<{}> = () => {
           </MetaDataColumn>
           <RoleColumn>
             <SideColumnHeadEl>Link</SideColumnHeadEl>
-            <div><a href='https://covid19.mustafasaifee.com/' rel="noopener noreferrer" target='_blank'>COVID-19 Dashboard</a></div>
+            <div><a href='https://covid19.mustafasaifee.dev/' rel="noopener noreferrer" target='_blank'>COVID-19 Dashboard</a></div>
             <SideColumnHeadEl>Tools</SideColumnHeadEl>
             <div>Typescript</div>
             <div>D3.js</div>
@@ -233,7 +233,7 @@ const COVID: React.FunctionComponent<{}> = () => {
         <img src='./img/dataViz/COVID/img1.jpg' alt="Access all data info" width="100%" />
         <LinkBannerEl>
           <LinkBanner>
-            <a href='https://covid19.mustafasaifee.com/' rel="noopener noreferrer" target='_blank'>
+            <a href='https://covid19.mustafasaifee.dev/' rel="noopener noreferrer" target='_blank'>
               <ButtonEl>See Interactive Version</ButtonEl>
             </a>
           </LinkBanner>

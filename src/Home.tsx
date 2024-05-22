@@ -408,8 +408,8 @@ const Home: React.FunctionComponent<{}> = () => {
           Hello!
           <br />
           <br />
-          I’m Mustafa Saifee, designer + developer based in Helsinki who enjoys
-          telling data stories.
+          I'm Mustafa Saifee, designer + developer based in Helsinki who enjoys
+          telling data stories. Currently I work with United Nations Development Programme as Data Visualization Analyst.
           <br />
           <br />
           Feel free to get in touch, if you want to work together or just to say
@@ -417,15 +417,6 @@ const Home: React.FunctionComponent<{}> = () => {
           <SocialMedia align="left" forAbout={false} />
         </div>
       </HeaderEl>
-      <SeperatorEl />
-      <div>
-        <SectionTitleEl fill='var(--magenta)'>
-          <h4>
-            UI / UX
-          </h4>
-        </SectionTitleEl>
-        <FeatureEl>{UiUx}</FeatureEl>
-      </div>
       <SeperatorEl />
       <div>
         <SectionTitleEl fill='var(--green)'>
@@ -439,19 +430,28 @@ const Home: React.FunctionComponent<{}> = () => {
       <div>
         <SectionTitleEl fill='var(--green)'>
           <h4>
-            Data Visualization Tools
+            Data Stories
           </h4>
         </SectionTitleEl>
-        <FeatureEl>{tools}</FeatureEl>
+        <FeatureEl>{projects}</FeatureEl>
+      </div>
+      <SeperatorEl />
+      <div>
+        <SectionTitleEl fill='var(--magenta)'>
+          <h4>
+            UI / UX
+          </h4>
+        </SectionTitleEl>
+        <FeatureEl>{UiUx}</FeatureEl>
       </div>
       <SeperatorEl />
       <div>
         <SectionTitleEl fill='var(--green)'>
           <h4>
-            Data Stories
+            Data Visualization Tools
           </h4>
         </SectionTitleEl>
-        <FeatureEl>{projects}</FeatureEl>
+        <FeatureEl>{tools}</FeatureEl>
       </div>
       <SeperatorEl />
       <div>

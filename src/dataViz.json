@@ -4,13 +4,13 @@
     "size": "medium",
     "img": "./img/dataViz/img1",
     "description": "A project exploring air pollution in India and its effect on the health and economy.",
-    "link": "https://air-quality-in-india.mustafasaifee.com"
+    "link": "https://air-quality-in-india.mustafasaifee.dev"
   },
   {
     "title": "Falsehood flies, and the Truth comes limping after it",
     "size": "medium",
     "img": "./img/dataViz/img2",
     "description": "A project exploring influence campaign & disinformation on Twitter.",
-    "link": "https://influence-campaign-on-twitter-visualized.mustafasaifee.com/"
+    "link": "https://influence-campaign-on-twitter-visualized.mustafasaifee.dev/"
   }
 ]

@@ -235,7 +235,7 @@ const ElectionResults: React.FunctionComponent<{}> = () => {
           </MetaDataColumn>
           <RoleColumn>
             <SideColumnHeadEl>Link</SideColumnHeadEl>
-            <div><a href='https://loksabharesults.mustafasaifee.com/' rel="noopener noreferrer" target='_blank'>Lok Sabha Election Result</a></div>
+            <div><a href='https://loksabharesults.mustafasaifee.dev/' rel="noopener noreferrer" target='_blank'>Lok Sabha Election Result</a></div>
             <SideColumnHeadEl>Tools</SideColumnHeadEl>
             <div>D3.js</div>
             <div>React.js</div>
@@ -310,7 +310,7 @@ const ElectionResults: React.FunctionComponent<{}> = () => {
         </FeatureSectionEl>
         <LinkBannerEl>
           <LinkBanner>
-            <a href='https://airq.mustafasaifee.com/' rel="noopener noreferrer" target='_blank'>
+            <a href='https://airq.mustafasaifee.dev/' rel="noopener noreferrer" target='_blank'>
               <ButtonEl>See Interactive Version</ButtonEl>
             </a>
           </LinkBanner>

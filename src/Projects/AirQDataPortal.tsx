@@ -235,7 +235,7 @@ const AirqDataPortal: React.FunctionComponent<{}> = () => {
           </MetaDataColumn>
           <RoleColumn>
             <SideColumnHeadEl>Link</SideColumnHeadEl>
-            <div><a href='https://airq.mustafasaifee.com/' rel="noopener noreferrer" target='_blank'>AirQ Data Portal</a></div>
+            <div><a href='https://airq.mustafasaifee.dev/' rel="noopener noreferrer" target='_blank'>AirQ Data Portal</a></div>
             <SideColumnHeadEl>Tools</SideColumnHeadEl>
             <div>Typescript</div>
             <div>Leaflet</div>
@@ -331,7 +331,7 @@ const AirqDataPortal: React.FunctionComponent<{}> = () => {
         </FeatureSectionEl>
         <LinkBannerEl>
           <LinkBanner>
-            <a href='https://airq.mustafasaifee.com/' rel="noopener noreferrer" target='_blank'>
+            <a href='https://airq.mustafasaifee.dev/' rel="noopener noreferrer" target='_blank'>
               <ButtonEl>See Interactive Version</ButtonEl>
             </a>
           </LinkBanner>
