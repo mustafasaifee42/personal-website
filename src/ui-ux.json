@@ -1,12 +1,12 @@
 [
   {
-    "title":"VR Ohjus",
+    "title": "UNDP Data Viz Tool",
     "size":"big",
-    "img":"./img/UiUx/img3",
-    "description":"Ohjus is situational awareness system for commuter train disruption management. It visualizes real-time data for improved and more reliable rail service.",
-    "link":"vr-ohjus",
+    "img": "./img/dataViz/img12",
+    "description": "Platform designed and developed for UNDP to empower decision-makers with state-of-the-art data and insights for a transformative impact.",
+    "link": "https://data.undp.org/",
     "markDownFile":"./mdFiles/vrOhjus.md",
-    "client":"VR Group"
+    "client":"UNDP"
   },
   {
     "title":"Oma Fingrid",
@@ -23,5 +23,14 @@
     "img":"./img/UiUx/img1",
     "description":"Apollo is tool to create and visualize stochastic model to optimize the production of hydropower in the medium term.",
     "link":"fortum-apollo"
+  },
+  {
+    "title":"VR Ohjus",
+    "size":"big",
+    "img":"./img/UiUx/img3",
+    "description":"Ohjus is situational awareness system for commuter train disruption management. It visualizes real-time data for improved and more reliable rail service.",
+    "link":"vr-ohjus",
+    "markDownFile":"./mdFiles/vrOhjus.md",
+    "client":"VR Group"
   }
 ]

@@ -1,10 +1,10 @@
 [
   {
-    "title": "Vr-Viz",
-    "size": "medium",
-    "img": "./img/dataViz/img5",
-    "description": "VR-Viz provide a high-level react components to generate 3D visualization in webVR. The open source project can be found on [Github](https://github.com/mustafasaifee42/VR-Viz). Vr-Viz was shorlisted for [Information is Beautiful Award 2019](https://www.informationisbeautifulawards.com/showcase/3884-vr-viz-visualization-system-for-virtual-reality) and is featured in [O'Reily's Creating Augmented and Virtual Realities](http://shop.oreilly.com/product/0636920206767.do).",
-    "link": "https://vr-viz.mustafasaifee.dev/"
+    "title": "UNDP Data Viz Tool",
+    "size": "big",
+    "img": "./img/dataViz/img14",
+    "description": "No-code tool that lets the user transform numbers into compelling visual stories with ease.",
+    "link": "https://data.undp.org/tools/viz-tool"
   },
   {
     "title": "DashboardBot",
@@ -12,5 +12,12 @@
     "img": "./img/dataViz/img10",
     "description": "DashboardBot is an algorithm-driven design tool applied to data visualization. It generates variations of designs for dashboard and different graphs.",
     "link": "https://www.dashboardbot.mustafasaifee.dev/"
+  },
+  {
+    "title": "Vr-Viz",
+    "size": "medium",
+    "img": "./img/dataViz/img5",
+    "description": "VR-Viz provide a high-level react components to generate 3D visualization in webVR. The open source project can be found on [Github](https://github.com/mustafasaifee42/VR-Viz). Vr-Viz was shorlisted for [Information is Beautiful Award 2019](https://www.informationisbeautifulawards.com/showcase/3884-vr-viz-visualization-system-for-virtual-reality) and is featured in [O'Reily's Creating Augmented and Virtual Realities](http://shop.oreilly.com/product/0636920206767.do).",
+    "link": "https://vr-viz.mustafasaifee.dev/"
   }
 ]

@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Twitter from "./imgs/twitter.svg";
 import LinkedIn from "./imgs/linkedin.svg";
 import Github from "./imgs/github.svg";
 import Email from "./imgs/email.svg";
@@ -40,13 +39,6 @@ const SocialMedia: React.FunctionComponent<{
         target="_blank"
       >
         <IconsEl src={Email} alt="email-icon" />
-      </a>
-      <a
-        href="https://twitter.com/mustafasaifee42"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        <IconsEl src={Twitter} alt="twitter-icon" />
       </a>
       <a
         href="https://www.linkedin.com/in/mustafasaifee/"
