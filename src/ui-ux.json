@@ -4,33 +4,27 @@
     "size":"big",
     "img": "./img/dataViz/img12",
     "description": "Platform designed and developed for UNDP to empower decision-makers with state-of-the-art data and insights for a transformative impact.",
-    "link": "https://data.undp.org/",
-    "markDownFile":"./mdFiles/vrOhjus.md",
-    "client":"UNDP"
+    "link": "https://data.undp.org/"
   },
   {
     "title":"Oma Fingrid",
     "size":"medium",
     "img":"./img/UiUx/img2",
     "description":"An Online service for Fingrid clients to visualize and monitor their electrical network and usage.",
-    "link":"oma-fingrid",
-    "markDownFile":"./mdFiles/omaFingrid.md",
-    "client":"Fingrid Oy"
+    "link":"/oma-fingrid"
   },
   {
     "title":"Fortum Apollo",
     "size":"medium",
     "img":"./img/UiUx/img1",
     "description":"Apollo is tool to create and visualize stochastic model to optimize the production of hydropower in the medium term.",
-    "link":"fortum-apollo"
+    "link":"/fortum-apollo"
   },
   {
     "title":"VR Ohjus",
     "size":"big",
     "img":"./img/UiUx/img3",
     "description":"Ohjus is situational awareness system for commuter train disruption management. It visualizes real-time data for improved and more reliable rail service.",
-    "link":"vr-ohjus",
-    "markDownFile":"./mdFiles/vrOhjus.md",
-    "client":"VR Group"
+    "link":"/vr-ohjus"
   }
 ]
