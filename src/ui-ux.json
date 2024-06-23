@@ -1,30 +1,38 @@
 [
   {
-    "title": "UNDP Data Viz Tool",
+    "title": "UNDP Data Futures Exchange",
     "size":"big",
     "img": "./img/dataViz/img12",
     "description": "Platform designed and developed for UNDP to empower decision-makers with state-of-the-art data and insights for a transformative impact.",
-    "link": "https://data.undp.org/"
+    "link": "https://data.undp.org/",
+    "caseStudy": "undp-data-portal"
+  },
+  {
+    "title":"UNDP SDG Push Diagnostics",
+    "size":"medium",
+    "img":"./img/UiUx/img2",
+    "description":"The SDG Push Diagnostic provides a dynamic visualization of the development landscape to help countries chart acceleration pathways through their policy choices. It integrates multiple data sources to establish a rapid landscape analysis that showcases SDG trends, national priorities, interlinkages, and potential futures.",
+    "link":"https://sdgdiagnostics.data.undp.org/"
   },
   {
     "title":"Oma Fingrid",
     "size":"medium",
     "img":"./img/UiUx/img2",
     "description":"An Online service for Fingrid clients to visualize and monitor their electrical network and usage.",
-    "link":"/oma-fingrid"
+    "caseStudy":"/oma-fingrid"
   },
   {
     "title":"Fortum Apollo",
     "size":"medium",
     "img":"./img/UiUx/img1",
     "description":"Apollo is tool to create and visualize stochastic model to optimize the production of hydropower in the medium term.",
-    "link":"/fortum-apollo"
+    "caseStudy":"/fortum-apollo"
   },
   {
     "title":"VR Ohjus",
-    "size":"big",
+    "size":"medium",
     "img":"./img/UiUx/img3",
     "description":"Ohjus is situational awareness system for commuter train disruption management. It visualizes real-time data for improved and more reliable rail service.",
-    "link":"/vr-ohjus"
+    "caseStudy":"/vr-ohjus"
   }
 ]

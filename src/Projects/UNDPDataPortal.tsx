@@ -209,7 +209,7 @@ const FeatureSectionHead = styled.div`
   margin: auto;
 `
 
-const UNDPDfx: React.FunctionComponent<{}> = () => {
+const UNDPDataPortal: React.FunctionComponent<{}> = () => {
     return (
       <El>
         <HeroBannerEl>
@@ -400,4 +400,4 @@ const UNDPDfx: React.FunctionComponent<{}> = () => {
     );
 };
 
-export default UNDPDfx;
+export default UNDPDataPortal;

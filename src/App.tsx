@@ -14,6 +14,7 @@ import GenderedToponyms from "./Projects/GenderedToponyms";
 import AirqDataPortal from "./Projects/AirQDataPortal";
 import ElectionResults from "./Projects/IndianElection";
 import COVID from "./Projects/COVID";
+import UNDPDataPortal from "./Projects/UNDPDataPortal";
 
 ReactGA.initialize("UA-32895936-1");
 ReactGA.set({ anonymizeIp: true });
@@ -268,6 +269,13 @@ function App() {
           exact
           render={() => {
             return <GenderedToponyms />;
+          }}
+        />
+        <Route
+          path={`/undp-data-portal`}
+          exact
+          render={() => {
+            return <UNDPDataPortal />;
           }}
         />
         <FooterEl>

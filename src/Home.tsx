@@ -115,7 +115,8 @@ const Home: React.FunctionComponent<{}> = () => {
         img: string;
         size: string;
         description: string;
-        link: string;
+        link?: string;
+        caseStudy?: string;
       },
       i: number
     ) => {
@@ -123,7 +124,7 @@ const Home: React.FunctionComponent<{}> = () => {
         <SectionEl size={d.size as 'medium' | 'big'} key={i}>
           <ImageEl size={d.size as 'medium' | 'big'}>
             {
-              d.link.indexOf("http") === 0 ? 
+              d.link?.indexOf("http") === 0 ? 
               <a href={d.link} rel="noopener noreferrer" target="_blank">
                 <picture>
                   <source type="image/webp" srcSet={`${d.img}.webp`} />
@@ -157,9 +158,17 @@ const Home: React.FunctionComponent<{}> = () => {
               />
             </span>
             <br />
-            <LinkEl color='var(--magenta)'>
+            <div style={{ display: 'flex'}}>
               {
-                d.link.indexOf("http") === 0 ? 
+                d.caseStudy ? 
+                <LinkEl color='var(--magenta)'>
+                  <Link to={`/${d.caseStudy}`}>
+                    View Case Study →
+                  </Link>
+                </LinkEl> : null
+              }
+              {
+                d.link ? 
                 <A
                   fill='var(--magenta)'
                   href={d.link}
@@ -168,11 +177,9 @@ const Home: React.FunctionComponent<{}> = () => {
                 >
                   View Site →
                 </A> : 
-              <Link to={`${d.link}`}>
-                View Case Study →
-              </Link>
+                null
               }
-            </LinkEl>
+            </div>
           </ContentEl>
         </SectionEl>
       );
