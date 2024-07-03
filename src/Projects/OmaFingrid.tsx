@@ -341,9 +341,9 @@ const OmaFingrid: React.FunctionComponent<{}> = () => {
         </SectionContainer>
         <RelatedCasesEl>
             <CardsEl>
-              <Link to={'/vr-ohjus'}>
+              <Link to={'/undp-dfx'}>
                 <LinkEl>
-                  ← VR Ohjus
+                  ← UNDP Data Futures Exchange
                 </LinkEl>
               </Link>
             </CardsEl>

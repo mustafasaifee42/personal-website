@@ -14,6 +14,7 @@ import GenderedToponyms from "./Projects/GenderedToponyms";
 import AirqDataPortal from "./Projects/AirQDataPortal";
 import ElectionResults from "./Projects/IndianElection";
 import COVID from "./Projects/COVID";
+import UNDPDfx from "./Projects/UNDPDFX";
 
 ReactGA.initialize("UA-32895936-1");
 ReactGA.set({ anonymizeIp: true });
@@ -247,6 +248,13 @@ function App() {
           exact
           render={() => {
             return <UNDPAccessAllData />;
+          }}
+        />
+        <Route
+          path={`/undp-dfx`}
+          exact
+          render={() => {
+            return <UNDPDfx />;
           }}
         />
         <Route

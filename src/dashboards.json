@@ -1,12 +1,5 @@
 [
   {
-    "title": "UNDP Data Futures Exchange",
-    "size": "big",
-    "img": "./img/dataViz/img12",
-    "description": "Platform designed and developed for UNDP to empower decision-makers with state-of-the-art data and insights for a transformative impact.",
-    "link": "https://data.undp.org/"
-  },
-  {
     "title": "Gendered Toponyms",
     "size": "medium",
     "img": "./img/dataViz/img9",

@@ -388,9 +388,9 @@ const VROhjus: React.FunctionComponent<{}> = () => {
               </Link>
             </CardsEl>
             <CardsEl>
-              <Link to={'/oma-fingrid'}>
+              <Link to={'/undp-dfx'}>
                 <LinkEl>
-                 Oma Fingrid →
+                  UNDP Data Futures Exchange →
                 </LinkEl>
               </Link>
             </CardsEl>

@@ -115,27 +115,16 @@ const Home: React.FunctionComponent<{}> = () => {
         img: string;
         size: string;
         description: string;
-        link: string;
+        link?: string;
+        caseStudy: string;
       },
       i: number
     ) => {
       return (
         <SectionEl size={d.size as 'medium' | 'big'} key={i}>
           <ImageEl size={d.size as 'medium' | 'big'}>
-            {
-              d.link.indexOf("http") === 0 ? 
-              <a href={d.link} rel="noopener noreferrer" target="_blank">
-                <picture>
-                  <source type="image/webp" srcSet={`${d.img}.webp`} />
-                  <source type="image/jpg" srcSet={`${d.img}.jpg`} />
-                  <ImgLink
-                    src={`${d.img}.jpg`}
-                    alt="title"
-                    width="100%"
-                  />
-                </picture>
-              </a> :
-                <Link to={`/${d.link}`}>
+            
+                <Link to={`/${d.caseStudy}`}>
                   <picture>
                     <source type="image/webp" srcSet={`${d.img}.webp`} />
                     <source type="image/jpg" srcSet={`${d.img}.jpg`} />
@@ -146,7 +135,6 @@ const Home: React.FunctionComponent<{}> = () => {
                     />
                   </picture>
                 </Link>
-            }
           </ImageEl>
           <ContentEl size={d.size as 'medium' | 'big'} >
             <H2 fill='var(--magenta)'>{d.title}</H2>
@@ -157,9 +145,14 @@ const Home: React.FunctionComponent<{}> = () => {
               />
             </span>
             <br />
-            <LinkEl color='var(--magenta)'>
+            <div style={{ display: 'flex'}}>
+              <LinkEl  color='var(--magenta)'>
+                <Link to={`/${d.caseStudy}`}>
+                  View Case Study →
+                </Link>
+              </LinkEl>
               {
-                d.link.indexOf("http") === 0 ? 
+                d.link ? 
                 <A
                   fill='var(--magenta)'
                   href={d.link}
@@ -167,12 +160,9 @@ const Home: React.FunctionComponent<{}> = () => {
                   target="_blank"
                 >
                   View Site →
-                </A> : 
-              <Link to={`${d.link}`}>
-                View Case Study →
-              </Link>
+                </A> : null
               }
-            </LinkEl>
+            </div>
           </ContentEl>
         </SectionEl>
       );

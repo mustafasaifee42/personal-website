@@ -19,5 +19,12 @@
     "img": "./img/dataViz/img5",
     "description": "VR-Viz provide a high-level react components to generate 3D visualization in webVR. The open source project can be found on [Github](https://github.com/mustafasaifee42/VR-Viz). Vr-Viz was shorlisted for [Information is Beautiful Award 2019](https://www.informationisbeautifulawards.com/showcase/3884-vr-viz-visualization-system-for-virtual-reality) and is featured in [O'Reily's Creating Augmented and Virtual Realities](http://shop.oreilly.com/product/0636920206767.do).",
     "link": "https://vr-viz.mustafasaifee.dev/"
+  },
+  {
+    "title": "UNDP Visualization Library",
+    "size": "big",
+    "img": "./img/dataViz/img10",
+    "description": "UNDP Visualization Library is a high level react based library to generate visualizations. NPM package can be found [here](https://www.npmjs.com/package/@undp-data/undp-visualization-library)",
+    "link": "https://orange-bay-04736e710.4.azurestaticapps.net/"
   }
 ]
