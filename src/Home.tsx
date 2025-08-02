@@ -434,12 +434,12 @@ const Home: React.FunctionComponent<{}> = () => {
       </HeaderEl>
       <SeperatorEl />
       <div>
-        <SectionTitleEl fill='var(--magenta)'>
+        <SectionTitleEl fill='var(--green)'>
           <h4>
-            UI / UX
+            Data Stories
           </h4>
         </SectionTitleEl>
-        <FeatureEl>{UiUx}</FeatureEl>
+        <FeatureEl>{projects}</FeatureEl>
       </div>
       <SeperatorEl />
       <div>
@@ -452,12 +452,12 @@ const Home: React.FunctionComponent<{}> = () => {
       </div>
       <SeperatorEl />
       <div>
-        <SectionTitleEl fill='var(--green)'>
+        <SectionTitleEl fill='var(--magenta)'>
           <h4>
-            Data Stories
+            UI / UX
           </h4>
         </SectionTitleEl>
-        <FeatureEl>{projects}</FeatureEl>
+        <FeatureEl>{UiUx}</FeatureEl>
       </div>
       <SeperatorEl />
       <div>
